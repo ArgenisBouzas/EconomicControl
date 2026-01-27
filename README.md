@@ -83,4 +83,4 @@ Aplicación web personal para administrar ingresos y egresos generados por activ
 
 ---
 
-**✨ "Claridad financiera para enfocarse en lo que importa: enseñar."**
+**✨ "Claridad financiera para enfocarse en lo que importa: enseñar."**# next_js_practica
