@@ -1,0 +1,4738 @@
+{
+  "coleccion": "Presupuesto",
+  "total": 338,
+  "documentos": [
+    {
+      "id": "a1669410203006",
+      "datos": {
+        "descripcion": "septiempre",
+        "tipo": "ingreso",
+        "valor": 96.88,
+        "docname": "a1669410203006"
+      },
+      "metadata": {
+        "fechaCreacion": "2022-11-25T21:05:06.684Z",
+        "fechaActualizacion": "2022-11-25T21:05:06.684Z",
+        "ruta": "Presupuesto/a1669410203006"
+      }
+    },
+    {
+      "id": "a1669410220366",
+      "datos": {
+        "descripcion": "octubre",
+        "tipo": "ingreso",
+        "valor": 106.12,
+        "docname": "a1669410220366"
+      },
+      "metadata": {
+        "fechaCreacion": "2022-11-25T21:05:24.047Z",
+        "fechaActualizacion": "2022-11-25T21:05:24.047Z",
+        "ruta": "Presupuesto/a1669410220366"
+      }
+    },
+    {
+      "id": "a1674137834937",
+      "datos": {
+        "descripcion": "noviembre",
+        "tipo": "ingreso",
+        "valor": 111.69,
+        "docname": "a1674137834937"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-01-19T14:20:05.251Z",
+        "fechaActualizacion": "2023-01-19T14:20:05.251Z",
+        "ruta": "Presupuesto/a1674137834937"
+      }
+    },
+    {
+      "id": "a1674137895345",
+      "datos": {
+        "descripcion": "diciembre",
+        "tipo": "ingreso",
+        "valor": 26.96,
+        "docname": "a1674137895345"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-01-19T14:21:05.482Z",
+        "fechaActualizacion": "2023-01-19T14:21:05.482Z",
+        "ruta": "Presupuesto/a1674137895345"
+      }
+    },
+    {
+      "id": "a1674137995569",
+      "datos": {
+        "descripcion": "diciembre 10",
+        "tipo": "egreso",
+        "valor": 200,
+        "docname": "a1674137995569"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-01-19T14:22:45.703Z",
+        "fechaActualizacion": "2023-01-19T14:22:45.703Z",
+        "ruta": "Presupuesto/a1674137995569"
+      }
+    },
+    {
+      "id": "a1675333931336",
+      "datos": {
+        "descripcion": "enero",
+        "tipo": "ingreso",
+        "valor": 13.42,
+        "docname": "a1675333931336"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-02-02T10:35:17.646Z",
+        "fechaActualizacion": "2023-02-02T10:35:17.646Z",
+        "ruta": "Presupuesto/a1675333931336"
+      }
+    },
+    {
+      "id": "a1677757898878",
+      "datos": {
+        "descripcion": "febrero",
+        "tipo": "ingreso",
+        "valor": 23.26,
+        "docname": "a1677757898878"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-03-02T11:55:18.725Z",
+        "fechaActualizacion": "2023-03-02T11:55:18.725Z",
+        "ruta": "Presupuesto/a1677757898878"
+      }
+    },
+    {
+      "id": "a1677757916790",
+      "datos": {
+        "descripcion": "partida nacimiento abuelo",
+        "tipo": "egreso",
+        "valor": 10,
+        "docname": "a1677757916790"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-03-02T11:55:36.655Z",
+        "fechaActualizacion": "2023-03-02T11:55:36.655Z",
+        "ruta": "Presupuesto/a1677757916790"
+      }
+    },
+    {
+      "id": "a1678969664279",
+      "datos": {
+        "descripcion": "2 de febrero",
+        "tipo": "egreso",
+        "valor": 40,
+        "docname": "a1678969664279"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-03-16T12:27:46.191Z",
+        "fechaActualizacion": "2023-03-16T12:27:46.191Z",
+        "ruta": "Presupuesto/a1678969664279"
+      }
+    },
+    {
+      "id": "a1678970437468",
+      "datos": {
+        "descripcion": "marzo",
+        "tipo": "ingreso",
+        "valor": 7.1,
+        "docname": "a1678970437468"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-03-16T12:40:39.379Z",
+        "fechaActualizacion": "2023-03-16T12:40:39.379Z",
+        "ruta": "Presupuesto/a1678970437468"
+      }
+    },
+    {
+      "id": "a1687795931943",
+      "datos": {
+        "descripcion": "cerrado",
+        "tipo": "egreso",
+        "valor": 135.43,
+        "docname": "a1687795931943"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-06-26T16:12:12.027Z",
+        "fechaActualizacion": "2023-06-26T16:12:12.027Z",
+        "ruta": "Presupuesto/a1687795931943"
+      }
+    },
+    {
+      "id": "a1687797391504",
+      "datos": {
+        "descripcion": "junio 2023",
+        "tipo": "ingreso",
+        "valor": 97.71,
+        "docname": "a1687797391504"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-06-26T16:36:31.607Z",
+        "fechaActualizacion": "2023-06-26T16:36:31.607Z",
+        "ruta": "Presupuesto/a1687797391504"
+      }
+    },
+    {
+      "id": "a1690213109135",
+      "datos": {
+        "descripcion": "julio 2023",
+        "tipo": "ingreso",
+        "valor": 71.52,
+        "docname": "a1690213109135"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-07-24T15:38:30.026Z",
+        "fechaActualizacion": "2023-07-24T15:38:30.026Z",
+        "ruta": "Presupuesto/a1690213109135"
+      }
+    },
+    {
+      "id": "a1691854227560",
+      "datos": {
+        "descripcion": "agosto",
+        "tipo": "egreso",
+        "valor": 200,
+        "docname": "a1691854227560"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-08-12T15:30:28.401Z",
+        "fechaActualizacion": "2023-08-12T15:30:28.401Z",
+        "ruta": "Presupuesto/a1691854227560"
+      }
+    },
+    {
+      "id": "a1698497609314",
+      "datos": {
+        "descripcion": "agosto 2023",
+        "tipo": "ingreso",
+        "valor": 133.28,
+        "docname": "a1698497609314"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-10-28T12:53:31.294Z",
+        "fechaActualizacion": "2023-10-28T12:53:31.294Z",
+        "ruta": "Presupuesto/a1698497609314"
+      }
+    },
+    {
+      "id": "a1698497638945",
+      "datos": {
+        "descripcion": "octubre 2023",
+        "tipo": "ingreso",
+        "valor": 70.7,
+        "docname": "a1698497638945"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-10-28T12:54:00.920Z",
+        "fechaActualizacion": "2023-10-28T12:54:00.920Z",
+        "ruta": "Presupuesto/a1698497638945"
+      }
+    },
+    {
+      "id": "a1699967386908",
+      "datos": {
+        "descripcion": "noviembre 2023",
+        "tipo": "ingreso",
+        "valor": 91.92,
+        "docname": "a1699967386908"
+      },
+      "metadata": {
+        "fechaCreacion": "2023-11-14T13:09:47.904Z",
+        "fechaActualizacion": "2023-11-14T13:09:47.904Z",
+        "ruta": "Presupuesto/a1699967386908"
+      }
+    },
+    {
+      "id": "a1704454716938",
+      "datos": {
+        "descripcion": "diciembre",
+        "tipo": "egreso",
+        "valor": 265.13,
+        "docname": "a1704454716938"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-01-05T11:38:38.075Z",
+        "fechaActualizacion": "2024-01-05T11:38:38.075Z",
+        "ruta": "Presupuesto/a1704454716938"
+      }
+    },
+    {
+      "id": "a1704454751034",
+      "datos": {
+        "tipo": "ingreso",
+        "valor": 88.83,
+        "docname": "a1704454751034",
+        "descripcion": "22-12-2023 youtube noviembre"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-01-05T11:39:12.169Z",
+        "fechaActualizacion": "2024-03-07T10:34:57.731Z",
+        "ruta": "Presupuesto/a1704454751034"
+      }
+    },
+    {
+      "id": "a1709055542913",
+      "datos": {
+        "tipo": "ingreso",
+        "valor": 29.7,
+        "docname": "a1709055542913",
+        "descripcion": "26-02-2024 classgap febrero"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-02-27T17:39:03.016Z",
+        "fechaActualizacion": "2024-03-07T10:33:48.768Z",
+        "ruta": "Presupuesto/a1709055542913"
+      }
+    },
+    {
+      "id": "a1709373983589",
+      "datos": {
+        "descripcion": "01-03-2024 Clases Luis Marcos semana 1",
+        "tipo": "ingreso",
+        "valor": 20,
+        "docname": "a1709373983589"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-03-02T10:06:24.877Z",
+        "fechaActualizacion": "2024-03-02T10:06:24.877Z",
+        "ruta": "Presupuesto/a1709373983589"
+      }
+    },
+    {
+      "id": "a1709807099927",
+      "datos": {
+        "descripcion": "06-03-2024 Clases Luis Marcos semana 2",
+        "tipo": "ingreso",
+        "valor": 20,
+        "docname": "a1709807099927"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-03-07T10:25:00.368Z",
+        "fechaActualizacion": "2024-03-07T10:25:00.368Z",
+        "ruta": "Presupuesto/a1709807099927"
+      }
+    },
+    {
+      "id": "a1710337428367",
+      "datos": {
+        "descripcion": "13-03-2024 Clases Luis Marcos semana 3",
+        "tipo": "ingreso",
+        "valor": 20,
+        "docname": "a1710337428367"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-03-13T13:43:49.271Z",
+        "fechaActualizacion": "2024-03-13T13:43:49.271Z",
+        "ruta": "Presupuesto/a1710337428367"
+      }
+    },
+    {
+      "id": "a1710943215931",
+      "datos": {
+        "descripcion": "20-03-2024 Clases Luis Marcos semana 4 ",
+        "tipo": "ingreso",
+        "valor": 20,
+        "docname": "a1710943215931"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-03-20T14:00:16.151Z",
+        "fechaActualizacion": "2024-03-20T14:00:16.151Z",
+        "ruta": "Presupuesto/a1710943215931"
+      }
+    },
+    {
+      "id": "a1711573050196",
+      "datos": {
+        "descripcion": "27-03-2024 Clases Luis Marcos semana 5",
+        "tipo": "ingreso",
+        "valor": 20,
+        "docname": "a1711573050196"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-03-27T20:57:31.802Z",
+        "fechaActualizacion": "2024-03-27T20:57:31.802Z",
+        "ruta": "Presupuesto/a1711573050196"
+      }
+    },
+    {
+      "id": "a1712140006403",
+      "datos": {
+        "descripcion": "03-04-2024 Clases Luis Marcos semana 6",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1712140006403"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-04-03T10:26:47.425Z",
+        "fechaActualizacion": "2024-04-03T10:26:47.425Z",
+        "ruta": "Presupuesto/a1712140006403"
+      }
+    },
+    {
+      "id": "a1712768307269",
+      "datos": {
+        "descripcion": "10-04-2024 Clases Luis Marcos semana 7",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1712768307269"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-04-10T16:58:27.401Z",
+        "fechaActualizacion": "2024-04-10T16:58:27.401Z",
+        "ruta": "Presupuesto/a1712768307269"
+      }
+    },
+    {
+      "id": "a1713376311212",
+      "datos": {
+        "descripcion": "17-04-2024 Clases Luis Marcos semana 8 ",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1713376311212"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-04-17T17:51:51.310Z",
+        "fechaActualizacion": "2024-04-17T17:51:51.310Z",
+        "ruta": "Presupuesto/a1713376311212"
+      }
+    },
+    {
+      "id": "a1713777344809",
+      "datos": {
+        "descripcion": "22-04-2024 Youtube Adsense D,E,F,M",
+        "tipo": "ingreso",
+        "valor": 104.67,
+        "docname": "a1713777344809"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-04-22T09:15:46.783Z",
+        "fechaActualizacion": "2024-04-22T09:15:46.783Z",
+        "ruta": "Presupuesto/a1713777344809"
+      }
+    },
+    {
+      "id": "a1713981029039",
+      "datos": {
+        "descripcion": "24-04-2024 Clases Luis Marcos semana 9 ",
+        "tipo": "ingreso",
+        "valor": 15,
+        "docname": "a1713981029039"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-04-24T17:50:29.928Z",
+        "fechaActualizacion": "2024-04-24T17:50:29.928Z",
+        "ruta": "Presupuesto/a1713981029039"
+      }
+    },
+    {
+      "id": "a1714029960158",
+      "datos": {
+        "descripcion": "25-04-2024 Classgap Abril",
+        "tipo": "ingreso",
+        "valor": 37.4,
+        "docname": "a1714029960158"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-04-25T07:26:01.813Z",
+        "fechaActualizacion": "2024-04-25T07:26:01.813Z",
+        "ruta": "Presupuesto/a1714029960158"
+      }
+    },
+    {
+      "id": "a1714585949706",
+      "datos": {
+        "descripcion": "01-05-2024 Clases Luis Marcos semana 10",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1714585949706"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-01T17:52:29.858Z",
+        "fechaActualizacion": "2024-05-01T17:52:29.858Z",
+        "ruta": "Presupuesto/a1714585949706"
+      }
+    },
+    {
+      "id": "a1714824803525",
+      "datos": {
+        "descripcion": "-------------------------------------------",
+        "tipo": "egreso",
+        "valor": 0,
+        "docname": "a1714824803525"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-04T12:13:23.635Z",
+        "fechaActualizacion": "2024-05-04T12:13:23.635Z",
+        "ruta": "Presupuesto/a1714824803525"
+      }
+    },
+    {
+      "id": "a1714824829897",
+      "datos": {
+        "descripcion": "04-05-2024 Retiro  ",
+        "tipo": "egreso",
+        "valor": 500,
+        "docname": "a1714824829897"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-04T12:13:50.012Z",
+        "fechaActualizacion": "2024-05-04T12:13:50.012Z",
+        "ruta": "Presupuesto/a1714824829897"
+      }
+    },
+    {
+      "id": "a1715296991520",
+      "datos": {
+        "descripcion": "09-05-2024 Clases Luis Marcos semana 11 ",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1715296991520"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-09T23:23:11.865Z",
+        "fechaActualizacion": "2024-05-09T23:23:11.865Z",
+        "ruta": "Presupuesto/a1715296991520"
+      }
+    },
+    {
+      "id": "a1715297046489",
+      "datos": {
+        "descripcion": "==========================================",
+        "tipo": "ingreso",
+        "valor": 0,
+        "docname": "a1715297046489"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-09T23:24:06.809Z",
+        "fechaActualizacion": "2024-05-09T23:24:06.809Z",
+        "ruta": "Presupuesto/a1715297046489"
+      }
+    },
+    {
+      "id": "a1715624655505",
+      "datos": {
+        "descripcion": "13-05-2024 Clases Jorge semana 1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1715624655505"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-13T18:24:15.657Z",
+        "fechaActualizacion": "2024-05-13T18:24:15.657Z",
+        "ruta": "Presupuesto/a1715624655505"
+      }
+    },
+    {
+      "id": "a1715877057458",
+      "datos": {
+        "descripcion": "16-05-2024 Clases Luis Marcos semana 12",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1715877057458"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-16T16:30:58.302Z",
+        "fechaActualizacion": "2024-05-16T16:30:58.302Z",
+        "ruta": "Presupuesto/a1715877057458"
+      }
+    },
+    {
+      "id": "a1715977421870",
+      "datos": {
+        "descripcion": "17-05-2024 Clases Jorge semana 1-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1715977421870"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-17T20:23:42.309Z",
+        "fechaActualizacion": "2024-05-17T20:23:42.309Z",
+        "ruta": "Presupuesto/a1715977421870"
+      }
+    },
+    {
+      "id": "a1716200578744",
+      "datos": {
+        "descripcion": "20-05-2024 Clases Sergio semana 1-1",
+        "tipo": "ingreso",
+        "valor": 5,
+        "docname": "a1716200578744"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-20T10:23:00.392Z",
+        "fechaActualizacion": "2024-05-20T10:23:00.392Z",
+        "ruta": "Presupuesto/a1716200578744"
+      }
+    },
+    {
+      "id": "a1716290338363",
+      "datos": {
+        "descripcion": "21-05-2024 Clases Sergio semana 1-2",
+        "tipo": "ingreso",
+        "valor": 10,
+        "docname": "a1716290338363"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-21T11:18:59.644Z",
+        "fechaActualizacion": "2024-05-21T11:18:59.644Z",
+        "ruta": "Presupuesto/a1716290338363"
+      }
+    },
+    {
+      "id": "a1716431139458",
+      "datos": {
+        "descripcion": "22-05-2024 Youtube Adsense Abril",
+        "tipo": "ingreso",
+        "valor": 92.24,
+        "docname": "a1716431139458"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-23T02:25:40.039Z",
+        "fechaActualizacion": "2024-05-23T02:25:40.039Z",
+        "ruta": "Presupuesto/a1716431139458"
+      }
+    },
+    {
+      "id": "a1716495368904",
+      "datos": {
+        "descripcion": "23-05-2024 Clases Luis Marcos semana 13",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1716495368904"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-23T20:16:09.143Z",
+        "fechaActualizacion": "2024-05-23T20:16:09.143Z",
+        "ruta": "Presupuesto/a1716495368904"
+      }
+    },
+    {
+      "id": "a1716584362005",
+      "datos": {
+        "descripcion": "24-05-2024 Clases Jorge semana 2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1716584362005"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-24T20:59:22.885Z",
+        "fechaActualizacion": "2024-05-24T20:59:22.885Z",
+        "ruta": "Presupuesto/a1716584362005"
+      }
+    },
+    {
+      "id": "a1716833558321",
+      "datos": {
+        "descripcion": "27-05-2024 Clases Jorge semana 3-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1716833558321"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-27T18:12:39.008Z",
+        "fechaActualizacion": "2024-05-27T18:12:39.008Z",
+        "ruta": "Presupuesto/a1716833558321"
+      }
+    },
+    {
+      "id": "a1717113381092",
+      "datos": {
+        "descripcion": "30-05-2024 Clases Luis Marcos semana 14 ",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1717113381092"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-30T23:56:21.524Z",
+        "fechaActualizacion": "2024-05-30T23:56:21.524Z",
+        "ruta": "Presupuesto/a1717113381092"
+      }
+    },
+    {
+      "id": "a1717181222421",
+      "datos": {
+        "descripcion": "31-05-2024 Clases Jorge semana 3-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1717181222421"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-05-31T18:47:03.534Z",
+        "fechaActualizacion": "2024-05-31T18:47:03.534Z",
+        "ruta": "Presupuesto/a1717181222421"
+      }
+    },
+    {
+      "id": "a1717411243968",
+      "datos": {
+        "descripcion": "03-06-2024 Clases Jorge semana 4-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1717411243968"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-03T10:40:45.007Z",
+        "fechaActualizacion": "2024-06-03T10:40:45.007Z",
+        "ruta": "Presupuesto/a1717411243968"
+      }
+    },
+    {
+      "id": "a1717690501697",
+      "datos": {
+        "descripcion": "06-06-2024 Clases Luis Marcos semana 15 ",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1717690501697"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-06T16:15:01.795Z",
+        "fechaActualizacion": "2024-06-06T16:15:01.795Z",
+        "ruta": "Presupuesto/a1717690501697"
+      }
+    },
+    {
+      "id": "a1717758158606",
+      "datos": {
+        "descripcion": "07-06-2024 Clases Jorge semana 4-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1717758158606"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-07T11:02:38.804Z",
+        "fechaActualizacion": "2024-06-07T11:02:38.804Z",
+        "ruta": "Presupuesto/a1717758158606"
+      }
+    },
+    {
+      "id": "a1718043165643",
+      "datos": {
+        "descripcion": "10-06-2024 Clases Jorge semana 5-1",
+        "tipo": "ingreso",
+        "valor": 6.25,
+        "docname": "a1718043165643"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-10T18:12:45.990Z",
+        "fechaActualizacion": "2024-06-10T18:12:45.990Z",
+        "ruta": "Presupuesto/a1718043165643"
+      }
+    },
+    {
+      "id": "a1718361482619",
+      "datos": {
+        "descripcion": "14-06-2024 Clases Luis Marcos semana 16",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1718361482619"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-14T10:38:02.922Z",
+        "fechaActualizacion": "2024-06-14T10:38:02.922Z",
+        "ruta": "Presupuesto/a1718361482619"
+      }
+    },
+    {
+      "id": "a1718389111325",
+      "datos": {
+        "descripcion": "14-06-2024 Clases Jorge semana 5-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1718389111325"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-14T18:18:31.445Z",
+        "fechaActualizacion": "2024-06-14T18:18:31.445Z",
+        "ruta": "Presupuesto/a1718389111325"
+      }
+    },
+    {
+      "id": "a1718648027593",
+      "datos": {
+        "descripcion": "17-06-2024 Clases Jorge semana 6-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1718648027593"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-17T18:13:47.686Z",
+        "fechaActualizacion": "2024-06-17T18:13:47.686Z",
+        "ruta": "Presupuesto/a1718648027593"
+      }
+    },
+    {
+      "id": "a1718821434650",
+      "datos": {
+        "descripcion": "19-06-2024 Clases Luis Marcos semana 17 ",
+        "tipo": "ingreso",
+        "valor": 25,
+        "docname": "a1718821434650"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-19T18:23:54.852Z",
+        "fechaActualizacion": "2024-06-19T18:23:54.852Z",
+        "ruta": "Presupuesto/a1718821434650"
+      }
+    },
+    {
+      "id": "a1718993898849",
+      "datos": {
+        "descripcion": "21-06-2024 Clases Jorge semana 6-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1718993898849"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-21T18:18:19.066Z",
+        "fechaActualizacion": "2024-06-21T18:18:19.066Z",
+        "ruta": "Presupuesto/a1718993898849"
+      }
+    },
+    {
+      "id": "a1719096221765",
+      "datos": {
+        "descripcion": "22-06-2024 Youtube Adsense Mayo",
+        "tipo": "ingreso",
+        "valor": 101.57,
+        "docname": "a1719096221765"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-22T22:43:42.599Z",
+        "fechaActualizacion": "2024-06-22T22:43:42.599Z",
+        "ruta": "Presupuesto/a1719096221765"
+      }
+    },
+    {
+      "id": "a1719226385491",
+      "datos": {
+        "descripcion": "24-06-2024 Clases Jorge semana 7-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1719226385491"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-24T10:53:05.835Z",
+        "fechaActualizacion": "2024-06-24T10:53:05.835Z",
+        "ruta": "Presupuesto/a1719226385491"
+      }
+    },
+    {
+      "id": "a1719505024541",
+      "datos": {
+        "descripcion": "27-06-2024 Clases Luis Marcos semana 18 ",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1719505024541"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-27T16:17:04.687Z",
+        "fechaActualizacion": "2024-06-27T16:17:04.687Z",
+        "ruta": "Presupuesto/a1719505024541"
+      }
+    },
+    {
+      "id": "a1719571311910",
+      "datos": {
+        "descripcion": "28-06-2024 Clases Jorge semana 7-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1719571311910"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-06-28T10:41:53.067Z",
+        "fechaActualizacion": "2024-06-28T10:41:53.067Z",
+        "ruta": "Presupuesto/a1719571311910"
+      }
+    },
+    {
+      "id": "a1719830445944",
+      "datos": {
+        "descripcion": "01-07-2024 Clases Jorge semana 8-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1719830445944"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-01T10:40:46.524Z",
+        "fechaActualizacion": "2024-07-01T10:40:46.524Z",
+        "ruta": "Presupuesto/a1719830445944"
+      }
+    },
+    {
+      "id": "a1719831574743",
+      "datos": {
+        "descripcion": "==========================================",
+        "tipo": "ingreso",
+        "valor": 0,
+        "docname": "a1719831574743"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-01T10:59:35.371Z",
+        "fechaActualizacion": "2024-07-01T10:59:35.371Z",
+        "ruta": "Presupuesto/a1719831574743"
+      }
+    },
+    {
+      "id": "a1719831628884",
+      "datos": {
+        "descripcion": "01-07-2024 Retiro",
+        "tipo": "egreso",
+        "valor": 560,
+        "docname": "a1719831628884"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-01T11:00:29.575Z",
+        "fechaActualizacion": "2024-07-01T11:00:29.575Z",
+        "ruta": "Presupuesto/a1719831628884"
+      }
+    },
+    {
+      "id": "a1720113330395",
+      "datos": {
+        "descripcion": "04-07-2024 Clases Luis Marcos semana 19",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1720113330395"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-04T17:15:32.652Z",
+        "fechaActualizacion": "2024-07-04T17:15:32.652Z",
+        "ruta": "Presupuesto/a1720113330395"
+      }
+    },
+    {
+      "id": "a1720175719137",
+      "datos": {
+        "descripcion": "05-07-2024 Clases Jorge semana 8-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1720175719137"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-05T10:35:22.327Z",
+        "fechaActualizacion": "2024-07-05T10:35:22.327Z",
+        "ruta": "Presupuesto/a1720175719137"
+      }
+    },
+    {
+      "id": "a1720435278379",
+      "datos": {
+        "descripcion": "08-07-2024 Clases Jorge semana 9-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1720435278379"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-08T10:41:19.700Z",
+        "fechaActualizacion": "2024-07-08T10:41:19.700Z",
+        "ruta": "Presupuesto/a1720435278379"
+      }
+    },
+    {
+      "id": "a1720717885686",
+      "datos": {
+        "descripcion": "11-07-2024 Clases Luis Marcos semana 20 ",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1720717885686"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-11T17:11:26.736Z",
+        "fechaActualizacion": "2024-07-11T17:11:26.736Z",
+        "ruta": "Presupuesto/a1720717885686"
+      }
+    },
+    {
+      "id": "a1720781525967",
+      "datos": {
+        "descripcion": "12-07-2024 Clases Jorge semana 9-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1720781525967"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-12T10:52:08.658Z",
+        "fechaActualizacion": "2024-07-12T10:52:08.658Z",
+        "ruta": "Presupuesto/a1720781525967"
+      }
+    },
+    {
+      "id": "a1721039635671",
+      "datos": {
+        "descripcion": "15-07-2024 Clases Jorge semana 10-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1721039635671"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-15T10:33:57.688Z",
+        "fechaActualizacion": "2024-07-15T10:33:57.688Z",
+        "ruta": "Presupuesto/a1721039635671"
+      }
+    },
+    {
+      "id": "a1721377129206",
+      "datos": {
+        "descripcion": "18-07-2024 Clases Luis Marcos semana 21",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1721377129206"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-19T08:18:50.632Z",
+        "fechaActualizacion": "2024-07-19T08:18:50.632Z",
+        "ruta": "Presupuesto/a1721377129206"
+      }
+    },
+    {
+      "id": "a1721385625007",
+      "datos": {
+        "descripcion": "19-07-2024 Clases Jorge semana 10-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1721385625007"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-19T10:40:26.380Z",
+        "fechaActualizacion": "2024-07-19T10:40:26.380Z",
+        "ruta": "Presupuesto/a1721385625007"
+      }
+    },
+    {
+      "id": "a1721645263191",
+      "datos": {
+        "descripcion": "22-07-2024 Clases Jorge semana 11-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1721645263191"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-22T10:47:44.476Z",
+        "fechaActualizacion": "2024-07-22T10:47:44.476Z",
+        "ruta": "Presupuesto/a1721645263191"
+      }
+    },
+    {
+      "id": "a1721645390026",
+      "datos": {
+        "descripcion": "22-07-2024 Youtube Adsense Junio",
+        "tipo": "ingreso",
+        "valor": 70.98,
+        "docname": "a1721645390026"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-22T10:49:51.316Z",
+        "fechaActualizacion": "2024-07-22T10:49:51.316Z",
+        "ruta": "Presupuesto/a1721645390026"
+      }
+    },
+    {
+      "id": "a1721990509901",
+      "datos": {
+        "descripcion": "26-07-2024 Clases Jorge semana 11-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1721990509901"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-26T10:41:51.833Z",
+        "fechaActualizacion": "2024-07-26T10:41:51.833Z",
+        "ruta": "Presupuesto/a1721990509901"
+      }
+    },
+    {
+      "id": "a1721990527677",
+      "datos": {
+        "descripcion": "26-07-2024 Clases Luis Marcos semana 22",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1721990527677"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-26T10:42:09.672Z",
+        "fechaActualizacion": "2024-07-26T10:42:09.672Z",
+        "ruta": "Presupuesto/a1721990527677"
+      }
+    },
+    {
+      "id": "a1722251771660",
+      "datos": {
+        "descripcion": "29-07-2024 Clases Jorge semana 12-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1722251771660"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-07-29T11:16:12.182Z",
+        "fechaActualizacion": "2024-07-29T11:16:12.182Z",
+        "ruta": "Presupuesto/a1722251771660"
+      }
+    },
+    {
+      "id": "a1722586828935",
+      "datos": {
+        "descripcion": "2-08-2024 Clases Luis Marcos semana 23 ",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1722586828935"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-02T08:20:31.127Z",
+        "fechaActualizacion": "2024-08-02T08:20:31.127Z",
+        "ruta": "Presupuesto/a1722586828935"
+      }
+    },
+    {
+      "id": "a1722595875782",
+      "datos": {
+        "descripcion": "02-08-2024 Clases Jorge semana 12-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1722595875782"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-02T10:51:15.932Z",
+        "fechaActualizacion": "2024-08-02T10:51:15.932Z",
+        "ruta": "Presupuesto/a1722595875782"
+      }
+    },
+    {
+      "id": "a1722784191902",
+      "datos": {
+        "descripcion": "correccion ",
+        "tipo": "egreso",
+        "valor": 0.16,
+        "docname": "a1722784191902"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-04T15:09:52.748Z",
+        "fechaActualizacion": "2024-08-04T15:09:52.748Z",
+        "ruta": "Presupuesto/a1722784191902"
+      }
+    },
+    {
+      "id": "a1722784611774",
+      "datos": {
+        "descripcion": "04-08-2024 Retiro",
+        "tipo": "egreso",
+        "valor": 350,
+        "docname": "a1722784611774"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-04T15:16:52.666Z",
+        "fechaActualizacion": "2024-08-04T15:16:52.666Z",
+        "ruta": "Presupuesto/a1722784611774"
+      }
+    },
+    {
+      "id": "a1722855087309",
+      "datos": {
+        "descripcion": "05-08-2024 Clases Jorge semana 13-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1722855087309"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-05T10:51:27.452Z",
+        "fechaActualizacion": "2024-08-05T10:51:27.452Z",
+        "ruta": "Presupuesto/a1722855087309"
+      }
+    },
+    {
+      "id": "a1723200365042",
+      "datos": {
+        "descripcion": "09-08-2024 Clases Jorge semana 13-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1723200365042"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-09T10:46:06.288Z",
+        "fechaActualizacion": "2024-08-09T10:46:06.288Z",
+        "ruta": "Presupuesto/a1723200365042"
+      }
+    },
+    {
+      "id": "a1723222743989",
+      "datos": {
+        "descripcion": "09-08-2024 Clases Luis Marcos semana 24",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1723222743989"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-09T16:59:04.148Z",
+        "fechaActualizacion": "2024-08-09T16:59:04.148Z",
+        "ruta": "Presupuesto/a1723222743989"
+      }
+    },
+    {
+      "id": "a1723459671709",
+      "datos": {
+        "descripcion": "12-08-2024 Clases Jorge semana 14-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1723459671709"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-12T10:47:52.741Z",
+        "fechaActualizacion": "2024-08-12T10:47:52.741Z",
+        "ruta": "Presupuesto/a1723459671709"
+      }
+    },
+    {
+      "id": "a1723805480000",
+      "datos": {
+        "descripcion": "16-08-2024 Clases Jorge semana 14-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1723805480000"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-16T10:51:20.115Z",
+        "fechaActualizacion": "2024-08-16T10:51:20.115Z",
+        "ruta": "Presupuesto/a1723805480000"
+      }
+    },
+    {
+      "id": "a1723839346634",
+      "datos": {
+        "descripcion": "16-08-2024 Clases Luis Marcos semana 25",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1723839346634"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-16T20:15:46.817Z",
+        "fechaActualizacion": "2024-08-16T20:15:46.817Z",
+        "ruta": "Presupuesto/a1723839346634"
+      }
+    },
+    {
+      "id": "a1724063593631",
+      "datos": {
+        "descripcion": "19-08-2024 Clases Jorge semana 15-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1724063593631"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-19T10:33:16.465Z",
+        "fechaActualizacion": "2024-08-19T10:33:16.465Z",
+        "ruta": "Presupuesto/a1724063593631"
+      }
+    },
+    {
+      "id": "a1724233762030",
+      "datos": {
+        "descripcion": "21-08-2024 Clases Luis Marcos semana 26",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1724233762030"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-21T09:49:23.527Z",
+        "fechaActualizacion": "2024-08-21T09:49:23.527Z",
+        "ruta": "Presupuesto/a1724233762030"
+      }
+    },
+    {
+      "id": "a1724410371503",
+      "datos": {
+        "descripcion": "23-08-2024 Clases Jorge semana 15-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1724410371503"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-23T10:52:51.672Z",
+        "fechaActualizacion": "2024-08-23T10:52:51.672Z",
+        "ruta": "Presupuesto/a1724410371503"
+      }
+    },
+    {
+      "id": "a1724698328701",
+      "datos": {
+        "descripcion": "26-08-2024 Clases Jorge semana 16-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1724698328701"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-26T18:52:09.717Z",
+        "fechaActualizacion": "2024-08-26T18:52:09.717Z",
+        "ruta": "Presupuesto/a1724698328701"
+      }
+    },
+    {
+      "id": "a1724952894067",
+      "datos": {
+        "descripcion": "29-08-2024 Clases Luis Marcos semana 27",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1724952894067"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-08-29T17:34:54.239Z",
+        "fechaActualizacion": "2024-08-29T17:34:54.239Z",
+        "ruta": "Presupuesto/a1724952894067"
+      }
+    },
+    {
+      "id": "a1725273950074",
+      "datos": {
+        "descripcion": "========================================== ",
+        "tipo": "ingreso",
+        "valor": 0,
+        "docname": "a1725273950074"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-02T10:45:50.806Z",
+        "fechaActualizacion": "2024-09-02T10:45:50.806Z",
+        "ruta": "Presupuesto/a1725273950074"
+      }
+    },
+    {
+      "id": "a1725273999195",
+      "datos": {
+        "descripcion": "02/09/2024 Retiro",
+        "tipo": "egreso",
+        "valor": 250,
+        "docname": "a1725273999195"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-02T10:46:39.812Z",
+        "fechaActualizacion": "2024-09-02T10:46:39.812Z",
+        "ruta": "Presupuesto/a1725273999195"
+      }
+    },
+    {
+      "id": "a1725468473924",
+      "datos": {
+        "descripcion": "04-09-2024 Clases Luis Marcos semana 28",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1725468473924"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-04T16:47:54.050Z",
+        "fechaActualizacion": "2024-09-04T16:47:54.050Z",
+        "ruta": "Presupuesto/a1725468473924"
+      }
+    },
+    {
+      "id": "a1726161177183",
+      "datos": {
+        "descripcion": "12-09-2024 Clases Luis Marcos semana 29",
+        "tipo": "ingreso",
+        "valor": 35,
+        "docname": "a1726161177183"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-12T17:12:58.126Z",
+        "fechaActualizacion": "2024-09-12T17:12:58.126Z",
+        "ruta": "Presupuesto/a1726161177183"
+      }
+    },
+    {
+      "id": "a1726746577257",
+      "datos": {
+        "descripcion": "19-09-2024 Clases Luis Marcos semana 30",
+        "tipo": "ingreso",
+        "valor": 40,
+        "docname": "a1726746577257"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-19T11:49:38.408Z",
+        "fechaActualizacion": "2024-09-19T11:49:38.408Z",
+        "ruta": "Presupuesto/a1726746577257"
+      }
+    },
+    {
+      "id": "a1726828802178",
+      "datos": {
+        "descripcion": "20-09-2024 Clases Jorge semana 16-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1726828802178"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-20T10:40:02.283Z",
+        "fechaActualizacion": "2024-09-20T10:40:02.283Z",
+        "ruta": "Presupuesto/a1726828802178"
+      }
+    },
+    {
+      "id": "a1727088158004",
+      "datos": {
+        "descripcion": "23-09-2024 Clases Jorge semana 17-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1727088158004"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-23T10:42:39.184Z",
+        "fechaActualizacion": "2024-09-23T10:42:39.184Z",
+        "ruta": "Presupuesto/a1727088158004"
+      }
+    },
+    {
+      "id": "a1727088217908",
+      "datos": {
+        "descripcion": "23-09-2024 Youtube Adsense agosto",
+        "tipo": "ingreso",
+        "valor": 138,
+        "docname": "a1727088217908"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-23T10:43:38.995Z",
+        "fechaActualizacion": "2024-09-23T10:43:38.995Z",
+        "ruta": "Presupuesto/a1727088217908"
+      }
+    },
+    {
+      "id": "a1727364782237",
+      "datos": {
+        "descripcion": "26-09-2024 Clases Luis Marcos semana 31",
+        "tipo": "ingreso",
+        "valor": 40,
+        "docname": "a1727364782237"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-26T15:33:02.527Z",
+        "fechaActualizacion": "2024-09-26T15:33:02.527Z",
+        "ruta": "Presupuesto/a1727364782237"
+      }
+    },
+    {
+      "id": "a1727462746569",
+      "datos": {
+        "descripcion": "27-09-2024 Clases Jorge semana 17-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1727462746569"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-27T18:45:47.275Z",
+        "fechaActualizacion": "2024-09-27T18:45:47.275Z",
+        "ruta": "Presupuesto/a1727462746569"
+      }
+    },
+    {
+      "id": "a1727690517223",
+      "datos": {
+        "descripcion": "30-09-2024 Clases Jorge semana 18-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1727690517223"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-09-30T10:01:58.083Z",
+        "fechaActualizacion": "2024-09-30T10:01:58.083Z",
+        "ruta": "Presupuesto/a1727690517223"
+      }
+    },
+    {
+      "id": "a1727806208483",
+      "datos": {
+        "descripcion": "01/10/2024 retiro",
+        "tipo": "egreso",
+        "valor": 325,
+        "docname": "a1727806208483"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-01T18:10:08.556Z",
+        "fechaActualizacion": "2024-10-01T18:10:08.556Z",
+        "ruta": "Presupuesto/a1727806208483"
+      }
+    },
+    {
+      "id": "a1728050503144",
+      "datos": {
+        "descripcion": "04-10-2024 Clases Luis Marcos semana 32",
+        "tipo": "ingreso",
+        "valor": 40,
+        "docname": "a1728050503144"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-04T14:01:43.277Z",
+        "fechaActualizacion": "2024-10-04T14:01:43.277Z",
+        "ruta": "Presupuesto/a1728050503144"
+      }
+    },
+    {
+      "id": "a1728066704257",
+      "datos": {
+        "descripcion": "04-10-2024 Clases Jorge semana 18-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1728066704257"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-04T18:31:44.490Z",
+        "fechaActualizacion": "2024-10-04T18:31:44.490Z",
+        "ruta": "Presupuesto/a1728066704257"
+      }
+    },
+    {
+      "id": "a1728357067769",
+      "datos": {
+        "descripcion": "07-10-2024 Clases Jorge semana 19-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1728357067769"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-08T03:11:07.869Z",
+        "fechaActualizacion": "2024-10-08T03:11:07.869Z",
+        "ruta": "Presupuesto/a1728357067769"
+      }
+    },
+    {
+      "id": "a1728574740060",
+      "datos": {
+        "descripcion": "10-10-2024 Clases Luis Marcos semana 33",
+        "tipo": "ingreso",
+        "valor": 40,
+        "docname": "a1728574740060"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-10T15:39:00.913Z",
+        "fechaActualizacion": "2024-10-10T15:39:00.913Z",
+        "ruta": "Presupuesto/a1728574740060"
+      }
+    },
+    {
+      "id": "a1728670568502",
+      "datos": {
+        "descripcion": "11-10-2024 Clases Jorge semana 19-2",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1728670568502"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-11T18:16:08.644Z",
+        "fechaActualizacion": "2024-10-11T18:16:08.644Z",
+        "ruta": "Presupuesto/a1728670568502"
+      }
+    },
+    {
+      "id": "a1728902491391",
+      "datos": {
+        "descripcion": "14-10-2024 Clases Jorge semana 20-1",
+        "tipo": "ingreso",
+        "valor": 12.5,
+        "docname": "a1728902491391"
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-14T10:41:31.715Z",
+        "fechaActualizacion": "2024-10-14T10:41:31.715Z",
+        "ruta": "Presupuesto/a1728902491391"
+      }
+    },
+    {
+      "id": "a1729185937941",
+      "datos": {
+        "docname": "a1729185937941",
+        "tipo": "ingreso",
+        "descripcion": "17-10-2024 Clases Luis Marcos semana 34",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-17T17:25:38.457Z",
+        "fechaActualizacion": "2024-10-17T17:25:38.457Z",
+        "ruta": "Presupuesto/a1729185937941"
+      }
+    },
+    {
+      "id": "a1729292315023",
+      "datos": {
+        "docname": "a1729292315023",
+        "tipo": "ingreso",
+        "descripcion": "18-10-2024 Clases Jorge semana 20-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-18T22:58:35.487Z",
+        "fechaActualizacion": "2024-10-18T22:58:35.487Z",
+        "ruta": "Presupuesto/a1729292315023"
+      }
+    },
+    {
+      "id": "a1729680853461",
+      "datos": {
+        "docname": "a1729680853461",
+        "tipo": "ingreso",
+        "descripcion": "21-10-2024 Youtube Adsense Septiembre",
+        "valor": 78.26
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-23T10:54:14.360Z",
+        "fechaActualizacion": "2024-10-23T10:54:14.360Z",
+        "ruta": "Presupuesto/a1729680853461"
+      }
+    },
+    {
+      "id": "a1729680898172",
+      "datos": {
+        "docname": "a1729680898172",
+        "tipo": "ingreso",
+        "descripcion": "23-10-2024 Clases Jorge semana 21-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-23T10:54:59.156Z",
+        "fechaActualizacion": "2024-10-23T10:54:59.156Z",
+        "ruta": "Presupuesto/a1729680898172"
+      }
+    },
+    {
+      "id": "a1729790740946",
+      "datos": {
+        "docname": "a1729790740946",
+        "tipo": "ingreso",
+        "descripcion": "24-10-2024 Clases Luis Marcos semana 35",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-24T17:25:41.734Z",
+        "fechaActualizacion": "2024-10-24T17:25:41.734Z",
+        "ruta": "Presupuesto/a1729790740946"
+      }
+    },
+    {
+      "id": "a1729852883918",
+      "datos": {
+        "docname": "a1729852883918",
+        "tipo": "ingreso",
+        "descripcion": "25-10-2024 Clases Jorge semana 21-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-25T10:41:25.429Z",
+        "fechaActualizacion": "2024-10-25T10:41:25.429Z",
+        "ruta": "Presupuesto/a1729852883918"
+      }
+    },
+    {
+      "id": "a1730142766326",
+      "datos": {
+        "docname": "a1730142766326",
+        "tipo": "ingreso",
+        "descripcion": "28-10-2024 Clases Jorge semana 22-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-28T19:12:46.462Z",
+        "fechaActualizacion": "2024-10-28T19:12:46.462Z",
+        "ruta": "Presupuesto/a1730142766326"
+      }
+    },
+    {
+      "id": "a1730312708144",
+      "datos": {
+        "docname": "a1730312708144",
+        "tipo": "ingreso",
+        "descripcion": "30-10-2024 Clases Luis Marcos semana 36",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-10-30T18:25:08.334Z",
+        "fechaActualizacion": "2024-10-30T18:25:08.334Z",
+        "ruta": "Presupuesto/a1730312708144"
+      }
+    },
+    {
+      "id": "a1730489557286",
+      "datos": {
+        "docname": "a1730489557286",
+        "tipo": "ingreso",
+        "descripcion": "01-11-2024 Clases Jorge semana 22-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-01T19:32:37.442Z",
+        "fechaActualizacion": "2024-11-01T19:32:37.442Z",
+        "ruta": "Presupuesto/a1730489557286"
+      }
+    },
+    {
+      "id": "a1730720560964",
+      "datos": {
+        "docname": "a1730720560964",
+        "tipo": "ingreso",
+        "descripcion": "04-11-2024 Clases Jorge semana 23-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-04T11:42:41.111Z",
+        "fechaActualizacion": "2024-11-04T11:42:41.111Z",
+        "ruta": "Presupuesto/a1730720560964"
+      }
+    },
+    {
+      "id": "a1731010546134",
+      "datos": {
+        "docname": "a1731010546134",
+        "tipo": "egreso",
+        "descripcion": "06/11/2024 retiro",
+        "valor": 401
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-07T20:15:47.182Z",
+        "fechaActualizacion": "2024-11-07T20:15:47.182Z",
+        "ruta": "Presupuesto/a1731010546134"
+      }
+    },
+    {
+      "id": "a1731010558405",
+      "datos": {
+        "docname": "a1731010558405",
+        "tipo": "egreso",
+        "descripcion": "========================================== ",
+        "valor": 0
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-07T20:15:59.361Z",
+        "fechaActualizacion": "2024-11-07T20:15:59.361Z",
+        "ruta": "Presupuesto/a1731010558405"
+      }
+    },
+    {
+      "id": "a1731010569329",
+      "datos": {
+        "docname": "a1731010569329",
+        "tipo": "ingreso",
+        "descripcion": "========================================== ",
+        "valor": 0
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-07T20:16:10.287Z",
+        "fechaActualizacion": "2024-11-07T20:16:10.287Z",
+        "ruta": "Presupuesto/a1731010569329"
+      }
+    },
+    {
+      "id": "a1731010586803",
+      "datos": {
+        "docname": "a1731010586803",
+        "tipo": "ingreso",
+        "descripcion": "07-11-2024 Clases Luis Marcos semana 37",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-07T20:16:27.766Z",
+        "fechaActualizacion": "2024-11-07T20:16:27.766Z",
+        "ruta": "Presupuesto/a1731010586803"
+      }
+    },
+    {
+      "id": "a1731182086202",
+      "datos": {
+        "docname": "a1731182086202",
+        "tipo": "ingreso",
+        "descripcion": "08-11-2024 Clases Jorge semana 23-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-09T19:54:46.332Z",
+        "fechaActualizacion": "2024-11-09T19:54:46.332Z",
+        "ruta": "Presupuesto/a1731182086202"
+      }
+    },
+    {
+      "id": "a1731480989980",
+      "datos": {
+        "docname": "a1731480989980",
+        "tipo": "ingreso",
+        "descripcion": "11-11-2024 Clases Jorge semana 24-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-13T06:56:31.169Z",
+        "fechaActualizacion": "2024-11-13T06:56:31.169Z",
+        "ruta": "Presupuesto/a1731480989980"
+      }
+    },
+    {
+      "id": "a1731585190075",
+      "datos": {
+        "docname": "a1731585190075",
+        "tipo": "ingreso",
+        "descripcion": "14-11-2024 Clases Luis Marcos semana 38",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-14T11:53:11.010Z",
+        "fechaActualizacion": "2024-11-14T11:53:11.010Z",
+        "ruta": "Presupuesto/a1731585190075"
+      }
+    },
+    {
+      "id": "a1731698904422",
+      "datos": {
+        "docname": "a1731698904422",
+        "tipo": "ingreso",
+        "descripcion": "15-11-2024 Clases Jorge semana 24-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-15T19:28:24.537Z",
+        "fechaActualizacion": "2024-11-15T19:28:24.537Z",
+        "ruta": "Presupuesto/a1731698904422"
+      }
+    },
+    {
+      "id": "a1732259798378",
+      "datos": {
+        "docname": "a1732259798378",
+        "tipo": "ingreso",
+        "descripcion": "18-11-2024 Clases Jorge semana 25-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-22T07:16:38.128Z",
+        "fechaActualizacion": "2024-11-22T07:16:38.128Z",
+        "ruta": "Presupuesto/a1732259798378"
+      }
+    },
+    {
+      "id": "a1732266678591",
+      "datos": {
+        "docname": "a1732266678591",
+        "tipo": "ingreso",
+        "descripcion": "22-11-2024 Clases Luis Marcos semana 39",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-22T09:11:18.351Z",
+        "fechaActualizacion": "2024-11-22T09:11:18.351Z",
+        "ruta": "Presupuesto/a1732266678591"
+      }
+    },
+    {
+      "id": "a1732383095549",
+      "datos": {
+        "docname": "a1732383095549",
+        "tipo": "ingreso",
+        "descripcion": "22-11-2024 Clases Jorge semana 25-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-23T17:31:36.068Z",
+        "fechaActualizacion": "2024-11-23T17:31:36.068Z",
+        "ruta": "Presupuesto/a1732383095549"
+      }
+    },
+    {
+      "id": "a1732468593856",
+      "datos": {
+        "docname": "a1732468593856",
+        "tipo": "ingreso",
+        "descripcion": "21-11-2024 Youtube Adsense Octubre",
+        "valor": 71.48
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-24T17:16:33.974Z",
+        "fechaActualizacion": "2024-11-24T17:16:33.974Z",
+        "ruta": "Presupuesto/a1732468593856"
+      }
+    },
+    {
+      "id": "a1732734669687",
+      "datos": {
+        "docname": "a1732734669687",
+        "tipo": "ingreso",
+        "descripcion": "27-11-2024 Clases Jorge semana 26-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-27T19:11:10.126Z",
+        "fechaActualizacion": "2024-11-27T19:11:10.126Z",
+        "ruta": "Presupuesto/a1732734669687"
+      }
+    },
+    {
+      "id": "a1732890376116",
+      "datos": {
+        "docname": "a1732890376116",
+        "tipo": "ingreso",
+        "descripcion": "29-11-2024 Clases Luis Marcos semana 40",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-29T14:26:17.868Z",
+        "fechaActualizacion": "2024-11-29T14:26:17.868Z",
+        "ruta": "Presupuesto/a1732890376116"
+      }
+    },
+    {
+      "id": "a1732906552377",
+      "datos": {
+        "docname": "a1732906552377",
+        "tipo": "ingreso",
+        "descripcion": "29-11-2024 Clases Jorge semana 26-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-11-29T18:55:52.482Z",
+        "fechaActualizacion": "2024-11-29T18:55:52.482Z",
+        "ruta": "Presupuesto/a1732906552377"
+      }
+    },
+    {
+      "id": "a1733139858229",
+      "datos": {
+        "docname": "a1733139858229",
+        "tipo": "ingreso",
+        "descripcion": "02-12-2024 Clases Jorge semana 27-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-02T11:44:19.035Z",
+        "fechaActualizacion": "2024-12-02T11:44:19.035Z",
+        "ruta": "Presupuesto/a1733139858229"
+      }
+    },
+    {
+      "id": "a1733423214351",
+      "datos": {
+        "docname": "a1733423214351",
+        "tipo": "ingreso",
+        "descripcion": "05-12-2024 Clases Luis Marcos semana 41",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-05T18:26:54.503Z",
+        "fechaActualizacion": "2024-12-05T18:26:54.503Z",
+        "ruta": "Presupuesto/a1733423214351"
+      }
+    },
+    {
+      "id": "a1733486016435",
+      "datos": {
+        "docname": "a1733486016435",
+        "tipo": "ingreso",
+        "descripcion": "06-12-2024 Clases Jorge semana 27-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-06T11:53:38.364Z",
+        "fechaActualizacion": "2024-12-06T11:53:38.364Z",
+        "ruta": "Presupuesto/a1733486016435"
+      }
+    },
+    {
+      "id": "a1733744128410",
+      "datos": {
+        "docname": "a1733744128410",
+        "tipo": "ingreso",
+        "descripcion": "09-12-2024 Clases Jorge semana 28-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-09T11:35:30.864Z",
+        "fechaActualizacion": "2024-12-09T11:35:30.864Z",
+        "ruta": "Presupuesto/a1733744128410"
+      }
+    },
+    {
+      "id": "a1734038499205",
+      "datos": {
+        "docname": "a1734038499205",
+        "tipo": "ingreso",
+        "descripcion": "12-12-2024 Clases Luis Marcos semana 42",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-12T21:21:40.109Z",
+        "fechaActualizacion": "2024-12-12T21:21:40.109Z",
+        "ruta": "Presupuesto/a1734038499205"
+      }
+    },
+    {
+      "id": "a1734078606007",
+      "datos": {
+        "docname": "a1734078606007",
+        "tipo": "egreso",
+        "descripcion": "13/12/2024 retiro",
+        "valor": 400.02
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-13T08:30:06.561Z",
+        "fechaActualizacion": "2024-12-13T08:30:06.561Z",
+        "ruta": "Presupuesto/a1734078606007"
+      }
+    },
+    {
+      "id": "a1734435127895",
+      "datos": {
+        "docname": "a1734435127895",
+        "tipo": "ingreso",
+        "descripcion": "13-12-2024 Clases Jorge semana 28-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-17T11:32:09.412Z",
+        "fechaActualizacion": "2024-12-17T11:32:09.412Z",
+        "ruta": "Presupuesto/a1734435127895"
+      }
+    },
+    {
+      "id": "a1734435148742",
+      "datos": {
+        "docname": "a1734435148742",
+        "tipo": "ingreso",
+        "descripcion": "17-12-2024 Clases Jorge semana 29-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-17T11:32:30.286Z",
+        "fechaActualizacion": "2024-12-17T11:32:30.286Z",
+        "ruta": "Presupuesto/a1734435148742"
+      }
+    },
+    {
+      "id": "a1734515237090",
+      "datos": {
+        "docname": "a1734515237090",
+        "tipo": "egreso",
+        "descripcion": "correccion",
+        "valor": 0.96
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-18T09:47:20.482Z",
+        "fechaActualizacion": "2024-12-18T09:47:20.482Z",
+        "ruta": "Presupuesto/a1734515237090"
+      }
+    },
+    {
+      "id": "a1734687171639",
+      "datos": {
+        "docname": "a1734687171639",
+        "tipo": "ingreso",
+        "descripcion": "20-12-2024 Clases Luis Marcos semana 43",
+        "valor": 15
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-20T09:32:54.726Z",
+        "fechaActualizacion": "2024-12-20T09:32:54.726Z",
+        "ruta": "Presupuesto/a1734687171639"
+      }
+    },
+    {
+      "id": "a1734694424020",
+      "datos": {
+        "docname": "a1734694424020",
+        "tipo": "ingreso",
+        "descripcion": "20-12-2024 Clases Jorge semana 29-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-20T11:33:47.013Z",
+        "fechaActualizacion": "2024-12-20T11:33:47.013Z",
+        "ruta": "Presupuesto/a1734694424020"
+      }
+    },
+    {
+      "id": "a1734953686807",
+      "datos": {
+        "docname": "a1734953686807",
+        "tipo": "ingreso",
+        "descripcion": "23-12-2024 Clases Jorge semana 30-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-23T11:34:46.169Z",
+        "fechaActualizacion": "2024-12-23T11:34:46.169Z",
+        "ruta": "Presupuesto/a1734953686807"
+      }
+    },
+    {
+      "id": "a1735246185528",
+      "datos": {
+        "docname": "a1735246185528",
+        "tipo": "ingreso",
+        "descripcion": "26-12-2024 Clases Luis Marcos semana 44",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-26T20:49:46.852Z",
+        "fechaActualizacion": "2024-12-26T20:49:46.852Z",
+        "ruta": "Presupuesto/a1735246185528"
+      }
+    },
+    {
+      "id": "a1735299840502",
+      "datos": {
+        "docname": "a1735299840502",
+        "tipo": "ingreso",
+        "descripcion": "27-12-2024 Clases Jorge semana 30-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-27T11:44:00.540Z",
+        "fechaActualizacion": "2024-12-27T11:44:00.540Z",
+        "ruta": "Presupuesto/a1735299840502"
+      }
+    },
+    {
+      "id": "a1735559556620",
+      "datos": {
+        "docname": "a1735559556620",
+        "tipo": "ingreso",
+        "descripcion": "30-12-2024 Clases Jorge semana 31-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2024-12-30T11:52:37.260Z",
+        "fechaActualizacion": "2024-12-30T11:52:37.260Z",
+        "ruta": "Presupuesto/a1735559556620"
+      }
+    },
+    {
+      "id": "a1735896608427",
+      "datos": {
+        "docname": "a1735896608427",
+        "tipo": "ingreso",
+        "descripcion": "03-01-2025 Clases Luis Marcos semana 45",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-03T09:30:09.654Z",
+        "fechaActualizacion": "2025-01-03T09:30:09.654Z",
+        "ruta": "Presupuesto/a1735896608427"
+      }
+    },
+    {
+      "id": "a1735902657518",
+      "datos": {
+        "docname": "a1735902657518",
+        "tipo": "ingreso",
+        "descripcion": "03-01-2025 Clases Jorge semana 31-2",
+        "valor": 13.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-03T11:10:57.661Z",
+        "fechaActualizacion": "2025-01-03T11:10:57.661Z",
+        "ruta": "Presupuesto/a1735902657518"
+      }
+    },
+    {
+      "id": "a1736163036778",
+      "datos": {
+        "docname": "a1736163036778",
+        "tipo": "ingreso",
+        "descripcion": "06-01-2025 Clases Jorge semana 32-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-06T11:30:37.073Z",
+        "fechaActualizacion": "2025-01-06T11:30:37.073Z",
+        "ruta": "Presupuesto/a1736163036778"
+      }
+    },
+    {
+      "id": "a1736521111554",
+      "datos": {
+        "docname": "a1736521111554",
+        "tipo": "ingreso",
+        "descripcion": "10-01-2025 Clases Luis Marcos semana 46",
+        "valor": 30
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-10T14:58:33.359Z",
+        "fechaActualizacion": "2025-01-10T14:58:33.359Z",
+        "ruta": "Presupuesto/a1736521111554"
+      }
+    },
+    {
+      "id": "a1736535837528",
+      "datos": {
+        "docname": "a1736535837528",
+        "tipo": "ingreso",
+        "descripcion": "10-01-2025 Clases Jorge semana 32-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-10T19:03:59.339Z",
+        "fechaActualizacion": "2025-01-10T19:03:59.339Z",
+        "ruta": "Presupuesto/a1736535837528"
+      }
+    },
+    {
+      "id": "a1736795115570",
+      "datos": {
+        "docname": "a1736795115570",
+        "tipo": "ingreso",
+        "descripcion": "13-01-2025 Clases Jorge semana 33-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-13T19:05:15.705Z",
+        "fechaActualizacion": "2025-01-13T19:05:15.705Z",
+        "ruta": "Presupuesto/a1736795115570"
+      }
+    },
+    {
+      "id": "a1737140746085",
+      "datos": {
+        "docname": "a1737140746085",
+        "tipo": "ingreso",
+        "descripcion": "17-01-2025 Clases Luis Marcos semana 47",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-17T19:05:46.911Z",
+        "fechaActualizacion": "2025-01-17T19:05:46.911Z",
+        "ruta": "Presupuesto/a1737140746085"
+      }
+    },
+    {
+      "id": "a1737140766568",
+      "datos": {
+        "docname": "a1737140766568",
+        "tipo": "ingreso",
+        "descripcion": "17-01-2025 Clases Jorge semana 33-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-17T19:06:07.412Z",
+        "fechaActualizacion": "2025-01-17T19:06:07.412Z",
+        "ruta": "Presupuesto/a1737140766568"
+      }
+    },
+    {
+      "id": "a1737459666861",
+      "datos": {
+        "docname": "a1737459666861",
+        "tipo": "ingreso",
+        "descripcion": "21-01-2025 Clases Jorge semana 34-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-21T11:41:06.839Z",
+        "fechaActualizacion": "2025-01-21T11:41:06.839Z",
+        "ruta": "Presupuesto/a1737459666861"
+      }
+    },
+    {
+      "id": "a1737534405406",
+      "datos": {
+        "docname": "a1737534405406",
+        "tipo": "ingreso",
+        "descripcion": "22-01-2025 Youtube Adsense noviembre diciembre",
+        "valor": 74.72
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-22T08:26:46.778Z",
+        "fechaActualizacion": "2025-01-22T08:26:46.778Z",
+        "ruta": "Presupuesto/a1737534405406"
+      }
+    },
+    {
+      "id": "a1737534870476",
+      "datos": {
+        "docname": "a1737534870476",
+        "tipo": "ingreso",
+        "descripcion": "22-01-2025 Clases Luis Marcos semana 48",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-22T08:34:31.839Z",
+        "fechaActualizacion": "2025-01-22T08:34:31.839Z",
+        "ruta": "Presupuesto/a1737534870476"
+      }
+    },
+    {
+      "id": "a1737974164492",
+      "datos": {
+        "docname": "a1737974164492",
+        "tipo": "ingreso",
+        "descripcion": "---------------------------------------------------------------------------",
+        "valor": 0
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-27T10:36:06.711Z",
+        "fechaActualizacion": "2025-01-27T10:36:06.711Z",
+        "ruta": "Presupuesto/a1737974164492"
+      }
+    },
+    {
+      "id": "a1737974170559",
+      "datos": {
+        "docname": "a1737974170559",
+        "tipo": "ingreso",
+        "descripcion": "--------------------------------------------------------------",
+        "valor": 0
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-27T10:36:12.794Z",
+        "fechaActualizacion": "2025-01-27T10:36:12.794Z",
+        "ruta": "Presupuesto/a1737974170559"
+      }
+    },
+    {
+      "id": "a1737974189340",
+      "datos": {
+        "docname": "a1737974189340",
+        "tipo": "egreso",
+        "descripcion": "-------------------------------------------------",
+        "valor": 470.46
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-27T10:36:31.539Z",
+        "fechaActualizacion": "2025-01-27T10:36:31.539Z",
+        "ruta": "Presupuesto/a1737974189340"
+      }
+    },
+    {
+      "id": "a1737974227900",
+      "datos": {
+        "docname": "a1737974227900",
+        "tipo": "ingreso",
+        "descripcion": "27-01-2025 Clases Jorge semana 35-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-27T10:37:10.105Z",
+        "fechaActualizacion": "2025-01-27T10:37:10.105Z",
+        "ruta": "Presupuesto/a1737974227900"
+      }
+    },
+    {
+      "id": "a1738316035645",
+      "datos": {
+        "docname": "a1738316035645",
+        "tipo": "ingreso",
+        "descripcion": "31-01-2025 Clases Luis Marcos semana 49",
+        "valor": 25
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-31T09:33:56.266Z",
+        "fechaActualizacion": "2025-01-31T09:33:56.266Z",
+        "ruta": "Presupuesto/a1738316035645"
+      }
+    },
+    {
+      "id": "a1738323071444",
+      "datos": {
+        "docname": "a1738323071444",
+        "tipo": "ingreso",
+        "descripcion": "31-01-2025 Clases Jorge semana 35-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-01-31T11:31:12.057Z",
+        "fechaActualizacion": "2025-01-31T11:31:12.057Z",
+        "ruta": "Presupuesto/a1738323071444"
+      }
+    },
+    {
+      "id": "a1738780246411",
+      "datos": {
+        "docname": "a1738780246411",
+        "tipo": "ingreso",
+        "descripcion": "05-02-2025 Clases Luis Marcos semana 50",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-05T18:30:47.231Z",
+        "fechaActualizacion": "2025-02-05T18:30:47.231Z",
+        "ruta": "Presupuesto/a1738780246411"
+      }
+    },
+    {
+      "id": "a1738928020806",
+      "datos": {
+        "docname": "a1738928020806",
+        "tipo": "ingreso",
+        "descripcion": "07-02-2025 Clases Jorge semana 36-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-07T11:33:41.495Z",
+        "fechaActualizacion": "2025-02-07T11:33:41.495Z",
+        "ruta": "Presupuesto/a1738928020806"
+      }
+    },
+    {
+      "id": "a1739042517329",
+      "datos": {
+        "docname": "a1739042517329",
+        "tipo": "ingreso",
+        "descripcion": "08-02-2025 Clases Jorge semana 36-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-08T19:21:57.505Z",
+        "fechaActualizacion": "2025-02-08T19:21:57.505Z",
+        "ruta": "Presupuesto/a1739042517329"
+      }
+    },
+    {
+      "id": "a1739482088127",
+      "datos": {
+        "docname": "a1739482088127",
+        "tipo": "ingreso",
+        "descripcion": "13-02-2025 Clases Luis Marcos semana 51",
+        "valor": 35
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-13T21:28:08.268Z",
+        "fechaActualizacion": "2025-02-13T21:28:08.268Z",
+        "ruta": "Presupuesto/a1739482088127"
+      }
+    },
+    {
+      "id": "a1739560082787",
+      "datos": {
+        "docname": "a1739560082787",
+        "tipo": "ingreso",
+        "descripcion": "14-02-2025 Clases Jorge semana 37-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-14T19:08:02.970Z",
+        "fechaActualizacion": "2025-02-14T19:08:02.970Z",
+        "ruta": "Presupuesto/a1739560082787"
+      }
+    },
+    {
+      "id": "a1739791945323",
+      "datos": {
+        "docname": "a1739791945323",
+        "tipo": "ingreso",
+        "descripcion": "17-02-2025 Clases Jorge semana 38-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-17T11:32:25.455Z",
+        "fechaActualizacion": "2025-02-17T11:32:25.455Z",
+        "ruta": "Presupuesto/a1739791945323"
+      }
+    },
+    {
+      "id": "a1740166201876",
+      "datos": {
+        "docname": "a1740166201876",
+        "tipo": "ingreso",
+        "descripcion": "21-02-2025 Clases Jorge semana 38-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-21T19:30:02.049Z",
+        "fechaActualizacion": "2025-02-21T19:30:02.049Z",
+        "ruta": "Presupuesto/a1740166201876"
+      }
+    },
+    {
+      "id": "a1740166231366",
+      "datos": {
+        "docname": "a1740166231366",
+        "tipo": "ingreso",
+        "descripcion": "21-02-2025 Clases Luis Marcos semana 52",
+        "valor": 30
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-21T19:30:31.571Z",
+        "fechaActualizacion": "2025-02-21T19:30:31.571Z",
+        "ruta": "Presupuesto/a1740166231366"
+      }
+    },
+    {
+      "id": "a1740424195064",
+      "datos": {
+        "docname": "a1740424195064",
+        "tipo": "ingreso",
+        "descripcion": "24-02-2025 Clases Jorge semana 39-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-24T19:09:55.202Z",
+        "fechaActualizacion": "2025-02-24T19:09:55.202Z",
+        "ruta": "Presupuesto/a1740424195064"
+      }
+    },
+    {
+      "id": "a1740770001715",
+      "datos": {
+        "docname": "a1740770001715",
+        "tipo": "ingreso",
+        "descripcion": "28-02-2025 Clases Jorge semana 39-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-28T19:13:21.873Z",
+        "fechaActualizacion": "2025-02-28T19:13:21.873Z",
+        "ruta": "Presupuesto/a1740770001715"
+      }
+    },
+    {
+      "id": "a1740770034159",
+      "datos": {
+        "docname": "a1740770034159",
+        "tipo": "ingreso",
+        "descripcion": "28-02-2025 Clases Luis Marcos semana 53",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-02-28T19:13:54.303Z",
+        "fechaActualizacion": "2025-02-28T19:13:54.303Z",
+        "ruta": "Presupuesto/a1740770034159"
+      }
+    },
+    {
+      "id": "a1741003273822",
+      "datos": {
+        "docname": "a1741003273822",
+        "tipo": "ingreso",
+        "descripcion": "03-03-2025 Clases Jorge semana 40-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-03T12:01:15.203Z",
+        "fechaActualizacion": "2025-03-03T12:01:15.203Z",
+        "ruta": "Presupuesto/a1741003273822"
+      }
+    },
+    {
+      "id": "a1741347675732",
+      "datos": {
+        "docname": "a1741347675732",
+        "tipo": "ingreso",
+        "descripcion": "07-03-2025 Clases Jorge semana 40-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-07T11:41:17.681Z",
+        "fechaActualizacion": "2025-03-07T11:41:17.681Z",
+        "ruta": "Presupuesto/a1741347675732"
+      }
+    },
+    {
+      "id": "a1741364285076",
+      "datos": {
+        "docname": "a1741364285076",
+        "tipo": "ingreso",
+        "descripcion": "07-03-2025 Clases Luis Marcos semana 54",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-07T16:18:05.303Z",
+        "fechaActualizacion": "2025-03-07T16:18:05.303Z",
+        "ruta": "Presupuesto/a1741364285076"
+      }
+    },
+    {
+      "id": "a1741633838266",
+      "datos": {
+        "docname": "a1741633838266",
+        "tipo": "ingreso",
+        "descripcion": "10-03-2025 Clases Jorge semana 41-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-10T19:10:38.678Z",
+        "fechaActualizacion": "2025-03-10T19:10:38.678Z",
+        "ruta": "Presupuesto/a1741633838266"
+      }
+    },
+    {
+      "id": "a1741860811335",
+      "datos": {
+        "docname": "a1741860811335",
+        "tipo": "ingreso",
+        "descripcion": "13-03-2025 Clases Luis Marcos semana 55",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-13T10:13:30.800Z",
+        "fechaActualizacion": "2025-03-13T10:13:30.800Z",
+        "ruta": "Presupuesto/a1741860811335"
+      }
+    },
+    {
+      "id": "a1741979249347",
+      "datos": {
+        "docname": "a1741979249347",
+        "tipo": "ingreso",
+        "descripcion": "14-03-2025 Clases Jorge semana 41-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-14T19:07:30.015Z",
+        "fechaActualizacion": "2025-03-14T19:07:30.015Z",
+        "ruta": "Presupuesto/a1741979249347"
+      }
+    },
+    {
+      "id": "a1742238557041",
+      "datos": {
+        "docname": "a1742238557041",
+        "tipo": "ingreso",
+        "descripcion": "17-03-2025 Clases Jorge semana 42-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-17T19:09:17.272Z",
+        "fechaActualizacion": "2025-03-17T19:09:17.272Z",
+        "ruta": "Presupuesto/a1742238557041"
+      }
+    },
+    {
+      "id": "a1742495712287",
+      "datos": {
+        "docname": "a1742495712287",
+        "tipo": "ingreso",
+        "descripcion": "20-03-2025 Clases Luis Marcos semana 56",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-20T18:35:12.517Z",
+        "fechaActualizacion": "2025-03-20T18:35:12.517Z",
+        "ruta": "Presupuesto/a1742495712287"
+      }
+    },
+    {
+      "id": "a1742584862239",
+      "datos": {
+        "docname": "a1742584862239",
+        "tipo": "ingreso",
+        "descripcion": "21-03-2025 Clases Jorge semana 42-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-21T19:21:03.136Z",
+        "fechaActualizacion": "2025-03-21T19:21:03.136Z",
+        "ruta": "Presupuesto/a1742584862239"
+      }
+    },
+    {
+      "id": "a1742816380232",
+      "datos": {
+        "docname": "a1742816380232",
+        "tipo": "ingreso",
+        "descripcion": "24-03-2025 Clases Jorge semana 43-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-24T11:39:40.473Z",
+        "fechaActualizacion": "2025-03-24T11:39:40.473Z",
+        "ruta": "Presupuesto/a1742816380232"
+      }
+    },
+    {
+      "id": "a1742837019699",
+      "datos": {
+        "docname": "a1742837019699",
+        "tipo": "ingreso",
+        "descripcion": "24-03-2025 Clases Luis Marcos semana 57",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-24T17:23:39.961Z",
+        "fechaActualizacion": "2025-03-24T17:23:39.961Z",
+        "ruta": "Presupuesto/a1742837019699"
+      }
+    },
+    {
+      "id": "a1743263477186",
+      "datos": {
+        "docname": "a1743263477186",
+        "tipo": "egreso",
+        "descripcion": "retiro marzo 25",
+        "valor": 510
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-29T15:51:18.358Z",
+        "fechaActualizacion": "2025-03-29T15:51:18.358Z",
+        "ruta": "Presupuesto/a1743263477186"
+      }
+    },
+    {
+      "id": "a1743263489869",
+      "datos": {
+        "docname": "a1743263489869",
+        "tipo": "egreso",
+        "descripcion": "primo marzo ayuda",
+        "valor": 20
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-29T15:51:31.047Z",
+        "fechaActualizacion": "2025-03-29T15:51:31.047Z",
+        "ruta": "Presupuesto/a1743263489869"
+      }
+    },
+    {
+      "id": "a1743263584261",
+      "datos": {
+        "docname": "a1743263584261",
+        "tipo": "ingreso",
+        "descripcion": "==========================",
+        "valor": 0
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-29T15:53:05.419Z",
+        "fechaActualizacion": "2025-03-29T15:53:05.419Z",
+        "ruta": "Presupuesto/a1743263584261"
+      }
+    },
+    {
+      "id": "a1743263591906",
+      "datos": {
+        "docname": "a1743263591906",
+        "tipo": "ingreso",
+        "descripcion": "======================================",
+        "valor": 0
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-29T15:53:13.081Z",
+        "fechaActualizacion": "2025-03-29T15:53:13.081Z",
+        "ruta": "Presupuesto/a1743263591906"
+      }
+    },
+    {
+      "id": "a1743263604744",
+      "datos": {
+        "docname": "a1743263604744",
+        "tipo": "ingreso",
+        "descripcion": "24-03-2025 Clases Jorge semana 43-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-29T15:53:25.936Z",
+        "fechaActualizacion": "2025-03-29T15:53:25.936Z",
+        "ruta": "Presupuesto/a1743263604744"
+      }
+    },
+    {
+      "id": "a1743445261274",
+      "datos": {
+        "docname": "a1743445261274",
+        "tipo": "ingreso",
+        "descripcion": "31-03-2025 Clases Jorge semana 44-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-03-31T18:21:03.137Z",
+        "fechaActualizacion": "2025-03-31T18:21:03.137Z",
+        "ruta": "Presupuesto/a1743445261274"
+      }
+    },
+    {
+      "id": "a1743616386535",
+      "datos": {
+        "docname": "a1743616386535",
+        "tipo": "ingreso",
+        "descripcion": "02-04-2025 Clases Luis Marcos semana 58",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-02T17:53:07.936Z",
+        "fechaActualizacion": "2025-04-02T17:53:07.936Z",
+        "ruta": "Presupuesto/a1743616386535"
+      }
+    },
+    {
+      "id": "a1743853834707",
+      "datos": {
+        "docname": "a1743853834707",
+        "tipo": "ingreso",
+        "descripcion": "04-04-2025 Clases Jorge semana 44-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-05T11:50:35.810Z",
+        "fechaActualizacion": "2025-04-05T11:50:35.810Z",
+        "ruta": "Presupuesto/a1743853834707"
+      }
+    },
+    {
+      "id": "a1744022220796",
+      "datos": {
+        "docname": "a1744022220796",
+        "tipo": "ingreso",
+        "descripcion": "07-04-2025 Clases Jorge semana 45-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-07T10:37:01.067Z",
+        "fechaActualizacion": "2025-04-07T10:37:01.067Z",
+        "ruta": "Presupuesto/a1744022220796"
+      }
+    },
+    {
+      "id": "a1744367746592",
+      "datos": {
+        "docname": "a1744367746592",
+        "tipo": "ingreso",
+        "descripcion": "11-04-2025 Clases Jorge semana 45-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-11T10:35:47.779Z",
+        "fechaActualizacion": "2025-04-11T10:35:47.779Z",
+        "ruta": "Presupuesto/a1744367746592"
+      }
+    },
+    {
+      "id": "a1744367765529",
+      "datos": {
+        "docname": "a1744367765529",
+        "tipo": "ingreso",
+        "descripcion": "11-04-2025 Clases Luis Marcos semana 59",
+        "valor": 30
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-11T10:36:06.537Z",
+        "fechaActualizacion": "2025-04-11T10:36:06.537Z",
+        "ruta": "Presupuesto/a1744367765529"
+      }
+    },
+    {
+      "id": "a1744703031919",
+      "datos": {
+        "docname": "a1744703031919",
+        "tipo": "ingreso",
+        "descripcion": "14-04-2025 Clases Jorge semana 46-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-15T07:43:52.173Z",
+        "fechaActualizacion": "2025-04-15T07:43:52.173Z",
+        "ruta": "Presupuesto/a1744703031919"
+      }
+    },
+    {
+      "id": "a1744792589457",
+      "datos": {
+        "docname": "a1744792589457",
+        "tipo": "ingreso",
+        "descripcion": "15-04-2025 Clases Arantza semana 1-1",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-16T08:36:29.592Z",
+        "fechaActualizacion": "2025-04-16T08:36:29.592Z",
+        "ruta": "Presupuesto/a1744792589457"
+      }
+    },
+    {
+      "id": "a1744964844781",
+      "datos": {
+        "docname": "a1744964844781",
+        "tipo": "ingreso",
+        "descripcion": "18-04-2025 Clases Luis Marcos semana 60",
+        "valor": 35
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-18T08:27:25.028Z",
+        "fechaActualizacion": "2025-04-18T08:27:25.028Z",
+        "ruta": "Presupuesto/a1744964844781"
+      }
+    },
+    {
+      "id": "a1745353162170",
+      "datos": {
+        "docname": "a1745353162170",
+        "tipo": "ingreso",
+        "descripcion": "22-04-2025 Clases Arantza semana 2-1",
+        "valor": 10
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-22T20:19:22.861Z",
+        "fechaActualizacion": "2025-04-22T20:19:22.861Z",
+        "ruta": "Presupuesto/a1745353162170"
+      }
+    },
+    {
+      "id": "a1745581693913",
+      "datos": {
+        "docname": "a1745581693913",
+        "tipo": "ingreso",
+        "descripcion": "25-04-2025 Clases Jorge semana 47-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-25T11:48:13.464Z",
+        "fechaActualizacion": "2025-04-25T11:48:13.464Z",
+        "ruta": "Presupuesto/a1745581693913"
+      }
+    },
+    {
+      "id": "a1745609958500",
+      "datos": {
+        "docname": "a1745609958500",
+        "tipo": "ingreso",
+        "descripcion": "25-04-2025 Clases Luis Marcos semana 61",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-25T19:39:19.091Z",
+        "fechaActualizacion": "2025-04-25T19:39:19.091Z",
+        "ruta": "Presupuesto/a1745609958500"
+      }
+    },
+    {
+      "id": "a1745689841382",
+      "datos": {
+        "docname": "a1745689841382",
+        "tipo": "ingreso",
+        "descripcion": "26-04-2025 Clases Arantza semana 2-2",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-26T17:50:42.885Z",
+        "fechaActualizacion": "2025-04-26T17:50:42.885Z",
+        "ruta": "Presupuesto/a1745689841382"
+      }
+    },
+    {
+      "id": "a1745836317554",
+      "datos": {
+        "docname": "a1745836317554",
+        "tipo": "ingreso",
+        "descripcion": "28-04-2025 Clases Jorge semana 48-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-28T10:31:58.135Z",
+        "fechaActualizacion": "2025-04-28T10:31:58.135Z",
+        "ruta": "Presupuesto/a1745836317554"
+      }
+    },
+    {
+      "id": "a1745958750957",
+      "datos": {
+        "docname": "a1745958750957",
+        "tipo": "ingreso",
+        "descripcion": "29-04-2025 Clases Arantza semana 3-1",
+        "valor": 10
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-29T20:32:31.081Z",
+        "fechaActualizacion": "2025-04-29T20:32:31.081Z",
+        "ruta": "Presupuesto/a1745958750957"
+      }
+    },
+    {
+      "id": "a1746041576838",
+      "datos": {
+        "docname": "a1746041576838",
+        "tipo": "ingreso",
+        "descripcion": "30-04-2025 Clases Arantza semana 3-2",
+        "valor": 8
+      },
+      "metadata": {
+        "fechaCreacion": "2025-04-30T19:32:58.093Z",
+        "fechaActualizacion": "2025-04-30T19:32:58.093Z",
+        "ruta": "Presupuesto/a1746041576838"
+      }
+    },
+    {
+      "id": "a1746130379477",
+      "datos": {
+        "docname": "a1746130379477",
+        "tipo": "ingreso",
+        "descripcion": "01-05-2025 Clases Arantza semana 3-3",
+        "valor": 9.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-01T20:12:59.535Z",
+        "fechaActualizacion": "2025-05-01T20:12:59.535Z",
+        "ruta": "Presupuesto/a1746130379477"
+      }
+    },
+    {
+      "id": "a1746182203705",
+      "datos": {
+        "docname": "a1746182203705",
+        "tipo": "ingreso",
+        "descripcion": "01-05-2025 Clases Jorge semana 48-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-02T10:36:44.518Z",
+        "fechaActualizacion": "2025-05-02T10:36:44.518Z",
+        "ruta": "Presupuesto/a1746182203705"
+      }
+    },
+    {
+      "id": "a1746182227134",
+      "datos": {
+        "docname": "a1746182227134",
+        "tipo": "ingreso",
+        "descripcion": "02-05-2025 Clases Luis Marcos semana 62",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-02T10:37:07.937Z",
+        "fechaActualizacion": "2025-05-02T10:37:07.937Z",
+        "ruta": "Presupuesto/a1746182227134"
+      }
+    },
+    {
+      "id": "a1746282758715",
+      "datos": {
+        "docname": "a1746282758715",
+        "tipo": "ingreso",
+        "descripcion": "03-05-2025 Clases Arantza semana 3-4",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-03T14:32:39.813Z",
+        "fechaActualizacion": "2025-05-03T14:32:39.813Z",
+        "ruta": "Presupuesto/a1746282758715"
+      }
+    },
+    {
+      "id": "a1746378295566",
+      "datos": {
+        "docname": "a1746378295566",
+        "tipo": "ingreso",
+        "descripcion": "04-05-2025 Clases Arantza semana 3-5",
+        "valor": 10
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-04T17:04:55.640Z",
+        "fechaActualizacion": "2025-05-04T17:04:55.640Z",
+        "ruta": "Presupuesto/a1746378295566"
+      }
+    },
+    {
+      "id": "a1746440080524",
+      "datos": {
+        "docname": "a1746440080524",
+        "tipo": "ingreso",
+        "descripcion": "05-05-2025 Clases Jorge semana 49-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-05T10:14:41.574Z",
+        "fechaActualizacion": "2025-05-05T10:14:41.574Z",
+        "ruta": "Presupuesto/a1746440080524"
+      }
+    },
+    {
+      "id": "a1746562631574",
+      "datos": {
+        "docname": "a1746562631574",
+        "tipo": "ingreso",
+        "descripcion": "06-05-2025 Clases Arantza semana 4-1",
+        "valor": 7.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-06T20:17:12.138Z",
+        "fechaActualizacion": "2025-05-06T20:17:12.138Z",
+        "ruta": "Presupuesto/a1746562631574"
+      }
+    },
+    {
+      "id": "a1746694321131",
+      "datos": {
+        "docname": "a1746694321131",
+        "tipo": "ingreso",
+        "descripcion": "07-05-2025 Clases Arantza semana 4-2",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-08T08:52:01.971Z",
+        "fechaActualizacion": "2025-05-08T08:52:01.971Z",
+        "ruta": "Presupuesto/a1746694321131"
+      }
+    },
+    {
+      "id": "a1746786583403",
+      "datos": {
+        "docname": "a1746786583403",
+        "tipo": "ingreso",
+        "descripcion": "09-05-2025 Clases Jorge semana 49-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-09T10:29:44.465Z",
+        "fechaActualizacion": "2025-05-09T10:29:44.465Z",
+        "ruta": "Presupuesto/a1746786583403"
+      }
+    },
+    {
+      "id": "a1746800787433",
+      "datos": {
+        "docname": "a1746800787433",
+        "tipo": "ingreso",
+        "descripcion": "09-05-2025 Clases Luis Marcos semana 63",
+        "valor": 35
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-09T14:26:28.410Z",
+        "fechaActualizacion": "2025-05-09T14:26:28.410Z",
+        "ruta": "Presupuesto/a1746800787433"
+      }
+    },
+    {
+      "id": "a1746982976955",
+      "datos": {
+        "docname": "a1746982976955",
+        "tipo": "ingreso",
+        "descripcion": "11-05-2025 Clases Arantza semana 4-3",
+        "valor": 7.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-11T17:02:57.687Z",
+        "fechaActualizacion": "2025-05-11T17:02:57.687Z",
+        "ruta": "Presupuesto/a1746982976955"
+      }
+    },
+    {
+      "id": "a1747313636566",
+      "datos": {
+        "docname": "a1747313636566",
+        "tipo": "ingreso",
+        "descripcion": "15-05-2025 Clases Luis Marcos semana 64",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-15T12:53:57.176Z",
+        "fechaActualizacion": "2025-05-15T12:53:57.176Z",
+        "ruta": "Presupuesto/a1747313636566"
+      }
+    },
+    {
+      "id": "a1747588358045",
+      "datos": {
+        "docname": "a1747588358045",
+        "tipo": "ingreso",
+        "descripcion": "18-05-2025 Clases Arantza semana 5-1",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-18T17:12:39.902Z",
+        "fechaActualizacion": "2025-05-18T17:12:39.902Z",
+        "ruta": "Presupuesto/a1747588358045"
+      }
+    },
+    {
+      "id": "a1747650605600",
+      "datos": {
+        "docname": "a1747650605600",
+        "tipo": "ingreso",
+        "descripcion": "19-05-2025 Clases Jorge semana 50-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-19T10:30:06.525Z",
+        "fechaActualizacion": "2025-05-19T10:30:06.525Z",
+        "ruta": "Presupuesto/a1747650605600"
+      }
+    },
+    {
+      "id": "a1747899388103",
+      "datos": {
+        "docname": "a1747899388103",
+        "tipo": "ingreso",
+        "descripcion": "22-05-2025 Clases Luis Marcos semana 65",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-22T07:36:29.763Z",
+        "fechaActualizacion": "2025-05-22T07:36:29.763Z",
+        "ruta": "Presupuesto/a1747899388103"
+      }
+    },
+    {
+      "id": "a1747899566077",
+      "datos": {
+        "docname": "a1747899566077",
+        "tipo": "ingreso",
+        "descripcion": "22-05-2025 Youtube Adsense enero febrero marzo abril",
+        "valor": 104.48
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-22T07:39:27.736Z",
+        "fechaActualizacion": "2025-05-22T07:39:27.736Z",
+        "ruta": "Presupuesto/a1747899566077"
+      }
+    },
+    {
+      "id": "a1747998636499",
+      "datos": {
+        "docname": "a1747998636499",
+        "tipo": "ingreso",
+        "descripcion": "23-05-2025 Clases Jorge semana 50-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-23T11:10:36.641Z",
+        "fechaActualizacion": "2025-05-23T11:10:36.641Z",
+        "ruta": "Presupuesto/a1747998636499"
+      }
+    },
+    {
+      "id": "a1748473324262",
+      "datos": {
+        "docname": "a1748473324262",
+        "tipo": "ingreso",
+        "descripcion": "28-05-2025 Clases Jorge semana 51-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-28T23:02:03.598Z",
+        "fechaActualizacion": "2025-05-28T23:02:03.598Z",
+        "ruta": "Presupuesto/a1748473324262"
+      }
+    },
+    {
+      "id": "a1748620960921",
+      "datos": {
+        "docname": "a1748620960921",
+        "tipo": "ingreso",
+        "descripcion": "30-05-2025 Clases Luis Marcos semana 66",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-30T16:02:42.093Z",
+        "fechaActualizacion": "2025-05-30T16:02:42.093Z",
+        "ruta": "Presupuesto/a1748620960921"
+      }
+    },
+    {
+      "id": "a1748628701340",
+      "datos": {
+        "docname": "a1748628701340",
+        "tipo": "ingreso",
+        "descripcion": "30-05-2025 Clases Jorge semana 51-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-05-30T18:11:42.506Z",
+        "fechaActualizacion": "2025-05-30T18:11:42.506Z",
+        "ruta": "Presupuesto/a1748628701340"
+      }
+    },
+    {
+      "id": "a1748863360651",
+      "datos": {
+        "docname": "a1748863360651",
+        "tipo": "ingreso",
+        "descripcion": "02-06-2025 Clases Jorge semana 52-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-02T11:22:41.569Z",
+        "fechaActualizacion": "2025-06-02T11:22:41.569Z",
+        "ruta": "Presupuesto/a1748863360651"
+      }
+    },
+    {
+      "id": "a1749201559411",
+      "datos": {
+        "tipo": "ingreso",
+        "valor": 25,
+        "descripcion": "06-06-2025 Clases Luis Marcos semana 67",
+        "docname": "a1749201559411"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-06T09:19:20.054Z",
+        "fechaActualizacion": "2025-06-06T09:19:20.054Z",
+        "ruta": "Presupuesto/a1749201559411"
+      }
+    },
+    {
+      "id": "a1749204985425",
+      "datos": {
+        "valor": 12.5,
+        "descripcion": "06-06-2025 Clases Jorge semana 52-2",
+        "docname": "a1749204985425",
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-06T10:16:26.099Z",
+        "fechaActualizacion": "2025-06-06T10:16:26.099Z",
+        "ruta": "Presupuesto/a1749204985425"
+      }
+    },
+    {
+      "id": "a1749465398140",
+      "datos": {
+        "docname": "a1749465398140",
+        "descripcion": "09-06-2025 Clases Jorge semana 53-1",
+        "valor": 12.5,
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-09T10:36:39.853Z",
+        "fechaActualizacion": "2025-06-09T10:36:39.853Z",
+        "ruta": "Presupuesto/a1749465398140"
+      }
+    },
+    {
+      "id": "a1749810833198",
+      "datos": {
+        "valor": 12.5,
+        "tipo": "ingreso",
+        "docname": "a1749810833198",
+        "descripcion": "13-06-2025 Clases Jorge semana 53-2"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-13T10:33:53.588Z",
+        "fechaActualizacion": "2025-06-13T10:33:53.588Z",
+        "ruta": "Presupuesto/a1749810833198"
+      }
+    },
+    {
+      "id": "a1749830938724",
+      "datos": {
+        "docname": "a1749830938724",
+        "valor": 35,
+        "descripcion": "13-06-2025 Clases Luis Marcos semana 68",
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-13T16:08:59.055Z",
+        "fechaActualizacion": "2025-06-13T16:08:59.055Z",
+        "ruta": "Presupuesto/a1749830938724"
+      }
+    },
+    {
+      "id": "a1750071575671",
+      "datos": {
+        "valor": 5,
+        "descripcion": "15-06-2025 arantza",
+        "docname": "a1750071575671",
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-16T10:59:36.693Z",
+        "fechaActualizacion": "2025-06-16T10:59:36.693Z",
+        "ruta": "Presupuesto/a1750071575671"
+      }
+    },
+    {
+      "id": "a1750097037247",
+      "datos": {
+        "valor": 12.5,
+        "descripcion": "16-06-2025 Clases Jorge semana 54-1",
+        "tipo": "ingreso",
+        "docname": "a1750097037247"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-16T18:03:58.299Z",
+        "fechaActualizacion": "2025-06-16T18:03:58.299Z",
+        "ruta": "Presupuesto/a1750097037247"
+      }
+    },
+    {
+      "id": "a1750433566733",
+      "datos": {
+        "docname": "a1750433566733",
+        "tipo": "egreso",
+        "descripcion": "retiro 19/06/2025",
+        "valor": 850
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-20T15:32:46.899Z",
+        "fechaActualizacion": "2025-06-20T15:32:46.899Z",
+        "ruta": "Presupuesto/a1750433566733"
+      }
+    },
+    {
+      "id": "a1750433585491",
+      "datos": {
+        "docname": "a1750433585491",
+        "tipo": "egreso",
+        "descripcion": "debo al primo",
+        "valor": 65
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-20T15:33:05.665Z",
+        "fechaActualizacion": "2025-06-20T15:33:05.665Z",
+        "ruta": "Presupuesto/a1750433585491"
+      }
+    },
+    {
+      "id": "a1750433628665",
+      "datos": {
+        "docname": "a1750433628665",
+        "tipo": "ingreso",
+        "descripcion": "20-06-2025 Clases Luis Marcos semana 69",
+        "valor": 35
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-20T15:33:48.826Z",
+        "fechaActualizacion": "2025-06-20T15:33:48.826Z",
+        "ruta": "Presupuesto/a1750433628665"
+      }
+    },
+    {
+      "id": "a1750443497093",
+      "datos": {
+        "docname": "a1750443497093",
+        "tipo": "ingreso",
+        "descripcion": "20-06-2025 Clases Jorge semana 54-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-20T18:18:17.301Z",
+        "fechaActualizacion": "2025-06-20T18:18:17.301Z",
+        "ruta": "Presupuesto/a1750443497093"
+      }
+    },
+    {
+      "id": "a1751024296182",
+      "datos": {
+        "docname": "a1751024296182",
+        "tipo": "ingreso",
+        "descripcion": "27-06-2025 Clases Jorge semana 55-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-27T11:38:16.327Z",
+        "fechaActualizacion": "2025-06-27T11:38:16.327Z",
+        "ruta": "Presupuesto/a1751024296182"
+      }
+    },
+    {
+      "id": "a1751024320376",
+      "datos": {
+        "docname": "a1751024320376",
+        "tipo": "ingreso",
+        "descripcion": "27-06-2025 Clases Luis Marcos semana 70",
+        "valor": 30
+      },
+      "metadata": {
+        "fechaCreacion": "2025-06-27T11:38:40.534Z",
+        "fechaActualizacion": "2025-06-27T11:38:40.534Z",
+        "ruta": "Presupuesto/a1751024320376"
+      }
+    },
+    {
+      "id": "a1751397121690",
+      "datos": {
+        "docname": "a1751397121690",
+        "tipo": "ingreso",
+        "descripcion": "30-06-2025 Clases Jorge semana 56-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-01T19:12:02.622Z",
+        "fechaActualizacion": "2025-07-01T19:12:02.622Z",
+        "ruta": "Presupuesto/a1751397121690"
+      }
+    },
+    {
+      "id": "a1751651630523",
+      "datos": {
+        "docname": "a1751651630523",
+        "tipo": "ingreso",
+        "descripcion": "04-07-2025 Clases Jorge semana 56-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-04T17:53:51.482Z",
+        "fechaActualizacion": "2025-07-04T17:53:51.482Z",
+        "ruta": "Presupuesto/a1751651630523"
+      }
+    },
+    {
+      "id": "a1751656704942",
+      "datos": {
+        "docname": "a1751656704942",
+        "tipo": "ingreso",
+        "descripcion": "04-07-2025 Clases Luis Marcos semana 71",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-04T19:18:25.858Z",
+        "fechaActualizacion": "2025-07-04T19:18:25.858Z",
+        "ruta": "Presupuesto/a1751656704942"
+      }
+    },
+    {
+      "id": "a1751911418985",
+      "datos": {
+        "docname": "a1751911418985",
+        "tipo": "ingreso",
+        "descripcion": "07-07-2025 Clases Jorge semana 57-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-07T18:03:39.780Z",
+        "fechaActualizacion": "2025-07-07T18:03:39.780Z",
+        "ruta": "Presupuesto/a1751911418985"
+      }
+    },
+    {
+      "id": "a1752249674791",
+      "datos": {
+        "docname": "a1752249674791",
+        "tipo": "ingreso",
+        "descripcion": "11-07-2025 Clases Luis Marcos semana 72",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-11T16:01:15.663Z",
+        "fechaActualizacion": "2025-07-11T16:01:15.663Z",
+        "ruta": "Presupuesto/a1752249674791"
+      }
+    },
+    {
+      "id": "a1752257182175",
+      "datos": {
+        "docname": "a1752257182175",
+        "tipo": "ingreso",
+        "descripcion": "11-07-2025 Clases Jorge semana 57-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-11T18:06:23.067Z",
+        "fechaActualizacion": "2025-07-11T18:06:23.067Z",
+        "ruta": "Presupuesto/a1752257182175"
+      }
+    },
+    {
+      "id": "a1752516548966",
+      "datos": {
+        "docname": "a1752516548966",
+        "tipo": "ingreso",
+        "descripcion": "14-07-2025 Clases Jorge semana 58-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-14T18:09:09.911Z",
+        "fechaActualizacion": "2025-07-14T18:09:09.911Z",
+        "ruta": "Presupuesto/a1752516548966"
+      }
+    },
+    {
+      "id": "a1752861508410",
+      "datos": {
+        "docname": "a1752861508410",
+        "tipo": "ingreso",
+        "descripcion": "18-07-2025 Clases Jorge semana 58-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-18T17:58:28.850Z",
+        "fechaActualizacion": "2025-07-18T17:58:28.850Z",
+        "ruta": "Presupuesto/a1752861508410"
+      }
+    },
+    {
+      "id": "a1753135342498",
+      "datos": {
+        "docname": "a1753135342498",
+        "tipo": "ingreso",
+        "descripcion": "21-07-2025 Clases Luis Marcos semana 73",
+        "valor": 25
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-21T22:02:23.322Z",
+        "fechaActualizacion": "2025-07-21T22:02:23.322Z",
+        "ruta": "Presupuesto/a1753135342498"
+      }
+    },
+    {
+      "id": "a1753135366258",
+      "datos": {
+        "docname": "a1753135366258",
+        "tipo": "ingreso",
+        "descripcion": "21-07-2025 Clases Jorge semana 59-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-21T22:02:47.071Z",
+        "fechaActualizacion": "2025-07-21T22:02:47.071Z",
+        "ruta": "Presupuesto/a1753135366258"
+      }
+    },
+    {
+      "id": "a1753465937306",
+      "datos": {
+        "docname": "a1753465937306",
+        "tipo": "ingreso",
+        "descripcion": "25-07-2025 Clases Jorge semana 59-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-25T17:52:17.537Z",
+        "fechaActualizacion": "2025-07-25T17:52:17.537Z",
+        "ruta": "Presupuesto/a1753465937306"
+      }
+    },
+    {
+      "id": "a1753465957757",
+      "datos": {
+        "docname": "a1753465957757",
+        "tipo": "ingreso",
+        "descripcion": "25-07-2025 Clases Luis Marcos semana 74",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-25T17:52:37.868Z",
+        "fechaActualizacion": "2025-07-25T17:52:37.868Z",
+        "ruta": "Presupuesto/a1753465957757"
+      }
+    },
+    {
+      "id": "a1753726140670",
+      "datos": {
+        "docname": "a1753726140670",
+        "tipo": "ingreso",
+        "descripcion": "28-07-2025 Clases Jorge semana 60-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-07-28T18:09:00.897Z",
+        "fechaActualizacion": "2025-07-28T18:09:00.897Z",
+        "ruta": "Presupuesto/a1753726140670"
+      }
+    },
+    {
+      "id": "a1754053847992",
+      "datos": {
+        "docname": "a1754053847992",
+        "tipo": "ingreso",
+        "descripcion": "01-08-2025 Clases Luis Marcos semana 75",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-01T13:10:49.164Z",
+        "fechaActualizacion": "2025-08-01T13:10:49.164Z",
+        "ruta": "Presupuesto/a1754053847992"
+      }
+    },
+    {
+      "id": "a1754071626904",
+      "datos": {
+        "docname": "a1754071626904",
+        "tipo": "ingreso",
+        "descripcion": "01-08-2025 Clases Jorge semana 60-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-01T18:07:08.081Z",
+        "fechaActualizacion": "2025-08-01T18:07:08.081Z",
+        "ruta": "Presupuesto/a1754071626904"
+      }
+    },
+    {
+      "id": "a1754303707554",
+      "datos": {
+        "docname": "a1754303707554",
+        "tipo": "ingreso",
+        "descripcion": "04-08-2025 Clases Jorge semana 61-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-04T10:35:07.769Z",
+        "fechaActualizacion": "2025-08-04T10:35:07.769Z",
+        "ruta": "Presupuesto/a1754303707554"
+      }
+    },
+    {
+      "id": "a1754317437637",
+      "datos": {
+        "docname": "a1754317437637",
+        "tipo": "ingreso",
+        "descripcion": "04-08-2025 Clases Luis Marcos semana 76",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-04T14:23:57.964Z",
+        "fechaActualizacion": "2025-08-04T14:23:57.964Z",
+        "ruta": "Presupuesto/a1754317437637"
+      }
+    },
+    {
+      "id": "a1754499355120",
+      "datos": {
+        "docname": "a1754499355120",
+        "tipo": "egreso",
+        "descripcion": "retiro 6/8/2025 (quedan 124,48 al primo)",
+        "valor": 380
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-06T16:55:56.360Z",
+        "fechaActualizacion": "2025-08-06T16:55:56.360Z",
+        "ruta": "Presupuesto/a1754499355120"
+      }
+    },
+    {
+      "id": "a1754499394560",
+      "datos": {
+        "docname": "a1754499394560",
+        "tipo": "egreso",
+        "descripcion": "06/08/2025 4.48$ retiro de correccion para dejar en 0",
+        "valor": 4.48
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-06T16:56:36.100Z",
+        "fechaActualizacion": "2025-08-06T16:56:36.100Z",
+        "ruta": "Presupuesto/a1754499394560"
+      }
+    },
+    {
+      "id": "a1754920881010",
+      "datos": {
+        "docname": "a1754920881010",
+        "tipo": "egreso",
+        "descripcion": "-20 para el primo del siguiente retiro",
+        "valor": 20
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-11T14:01:20.803Z",
+        "fechaActualizacion": "2025-08-11T14:01:20.803Z",
+        "ruta": "Presupuesto/a1754920881010"
+      }
+    },
+    {
+      "id": "a1755615743266",
+      "datos": {
+        "docname": "a1755615743266",
+        "tipo": "ingreso",
+        "descripcion": "012-08-2025 Clases Luis Marcos semana 78 ",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-19T15:02:25.802Z",
+        "fechaActualizacion": "2025-08-19T15:02:25.802Z",
+        "ruta": "Presupuesto/a1755615743266"
+      }
+    },
+    {
+      "id": "a1755935743716",
+      "datos": {
+        "docname": "a1755935743716",
+        "tipo": "ingreso",
+        "descripcion": "23-08-2025 Clases Luis Marcos semana 79",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-23T07:55:44.227Z",
+        "fechaActualizacion": "2025-08-23T07:55:44.227Z",
+        "ruta": "Presupuesto/a1755935743716"
+      }
+    },
+    {
+      "id": "a1756643789136",
+      "datos": {
+        "docname": "a1756643789136",
+        "tipo": "ingreso",
+        "descripcion": "31-08-2025 Clases Luis Marcos semana 80",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-08-31T12:36:30.413Z",
+        "fechaActualizacion": "2025-08-31T12:36:30.413Z",
+        "ruta": "Presupuesto/a1756643789136"
+      }
+    },
+    {
+      "id": "a1757099411255",
+      "datos": {
+        "docname": "a1757099411255",
+        "tipo": "ingreso",
+        "descripcion": "04-09-2025 Clases Jorge semana 62-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-05T19:10:11.194Z",
+        "fechaActualizacion": "2025-09-05T19:10:11.194Z",
+        "ruta": "Presupuesto/a1757099411255"
+      }
+    },
+    {
+      "id": "a1757099423896",
+      "datos": {
+        "docname": "a1757099423896",
+        "tipo": "ingreso",
+        "descripcion": "05-09-2025 Clases Jorge semana 62-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-05T19:10:23.801Z",
+        "fechaActualizacion": "2025-09-05T19:10:23.801Z",
+        "ruta": "Presupuesto/a1757099423896"
+      }
+    },
+    {
+      "id": "a1757099443220",
+      "datos": {
+        "docname": "a1757099443220",
+        "tipo": "ingreso",
+        "descripcion": "01-09-2025 Clases Luis Marcos semana 81",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-05T19:10:43.102Z",
+        "fechaActualizacion": "2025-09-05T19:10:43.102Z",
+        "ruta": "Presupuesto/a1757099443220"
+      }
+    },
+    {
+      "id": "a1757357808409",
+      "datos": {
+        "docname": "a1757357808409",
+        "tipo": "ingreso",
+        "descripcion": "08-09-2025 Clases Jorge semana 63-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-08T18:56:48.472Z",
+        "fechaActualizacion": "2025-09-08T18:56:48.472Z",
+        "ruta": "Presupuesto/a1757357808409"
+      }
+    },
+    {
+      "id": "a1757872871201",
+      "datos": {
+        "docname": "a1757872871201",
+        "tipo": "ingreso",
+        "descripcion": "12-09-2025 Clases Luis Marcos semana 82",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-14T18:01:10.653Z",
+        "fechaActualizacion": "2025-09-14T18:01:10.653Z",
+        "ruta": "Presupuesto/a1757872871201"
+      }
+    },
+    {
+      "id": "a1757963021734",
+      "datos": {
+        "docname": "a1757963021734",
+        "tipo": "ingreso",
+        "descripcion": "15-09-2025 Clases Jorge semana 64-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-15T19:03:42.024Z",
+        "fechaActualizacion": "2025-09-15T19:03:42.024Z",
+        "ruta": "Presupuesto/a1757963021734"
+      }
+    },
+    {
+      "id": "a1758486305379",
+      "datos": {
+        "docname": "a1758486305379",
+        "valor": 30,
+        "descripcion": "21-09-2025 Clases Luis Marcos semana 83",
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-21T20:25:06.153Z",
+        "fechaActualizacion": "2025-09-21T20:25:06.153Z",
+        "ruta": "Presupuesto/a1758486305379"
+      }
+    },
+    {
+      "id": "a1758623240120",
+      "datos": {
+        "docname": "a1758623240120",
+        "tipo": "ingreso",
+        "descripcion": "23-09-2025 Clases Jorge semana 64-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-23T10:27:21.009Z",
+        "fechaActualizacion": "2025-09-23T10:27:21.009Z",
+        "ruta": "Presupuesto/a1758623240120"
+      }
+    },
+    {
+      "id": "a1758623550255",
+      "datos": {
+        "docname": "a1758623550255",
+        "valor": 71.89,
+        "descripcion": "23-09-2025 youtube julio agosto",
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-23T10:32:31.128Z",
+        "fechaActualizacion": "2025-09-23T10:32:31.128Z",
+        "ruta": "Presupuesto/a1758623550255"
+      }
+    },
+    {
+      "id": "a1758624300762",
+      "datos": {
+        "docname": "a1758624300762",
+        "descripcion": "youtube julio",
+        "valor": 102.43,
+        "tipo": "ingreso"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-23T10:45:01.623Z",
+        "fechaActualizacion": "2025-09-23T10:45:01.623Z",
+        "ruta": "Presupuesto/a1758624300762"
+      }
+    },
+    {
+      "id": "a1758895704919",
+      "datos": {
+        "tipo": "ingreso",
+        "descripcion": "26-09-2025 Clases Luis Marcos semana 84",
+        "docname": "a1758895704919",
+        "valor": 35
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-26T14:08:25.053Z",
+        "fechaActualizacion": "2025-09-26T14:08:25.053Z",
+        "ruta": "Presupuesto/a1758895704919"
+      }
+    },
+    {
+      "id": "a1758914102473",
+      "datos": {
+        "tipo": "ingreso",
+        "docname": "a1758914102473",
+        "valor": 12.5,
+        "descripcion": "26-09-2025 Clases Jorge semana 65-1"
+      },
+      "metadata": {
+        "fechaCreacion": "2025-09-26T19:15:02.680Z",
+        "fechaActualizacion": "2025-09-26T19:15:02.680Z",
+        "ruta": "Presupuesto/a1758914102473"
+      }
+    },
+    {
+      "id": "a1759519493715",
+      "datos": {
+        "docname": "a1759519493715",
+        "tipo": "ingreso",
+        "descripcion": "29-09-2025 Clases Jorge semana 65-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-03T19:24:54.803Z",
+        "fechaActualizacion": "2025-10-03T19:24:54.803Z",
+        "ruta": "Presupuesto/a1759519493715"
+      }
+    },
+    {
+      "id": "a1759519525027",
+      "datos": {
+        "docname": "a1759519525027",
+        "tipo": "ingreso",
+        "descripcion": "03-10-2025 Clases Jorge semana 66-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-03T19:25:26.104Z",
+        "fechaActualizacion": "2025-10-03T19:25:26.104Z",
+        "ruta": "Presupuesto/a1759519525027"
+      }
+    },
+    {
+      "id": "a1759519552621",
+      "datos": {
+        "docname": "a1759519552621",
+        "tipo": "ingreso",
+        "descripcion": "03-10-2025 Clases Luis Marcos semana 85",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-03T19:25:53.697Z",
+        "fechaActualizacion": "2025-10-03T19:25:53.697Z",
+        "ruta": "Presupuesto/a1759519552621"
+      }
+    },
+    {
+      "id": "a1759935366292",
+      "datos": {
+        "docname": "a1759935366292",
+        "tipo": "ingreso",
+        "descripcion": "08-10-2025 Clases Luis Marcos semana 86",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-08T14:56:07.830Z",
+        "fechaActualizacion": "2025-10-08T14:56:07.830Z",
+        "ruta": "Presupuesto/a1759935366292"
+      }
+    },
+    {
+      "id": "a1759954762102",
+      "datos": {
+        "docname": "a1759954762102",
+        "tipo": "egreso",
+        "descripcion": "08/10/2025 retiro ",
+        "valor": 610
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-08T20:19:22.220Z",
+        "fechaActualizacion": "2025-10-08T20:19:22.220Z",
+        "ruta": "Presupuesto/a1759954762102"
+      }
+    },
+    {
+      "id": "a1759954776170",
+      "datos": {
+        "docname": "a1759954776170",
+        "tipo": "egreso",
+        "descripcion": "correccion",
+        "valor": 23
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-08T20:19:36.286Z",
+        "fechaActualizacion": "2025-10-08T20:19:36.286Z",
+        "ruta": "Presupuesto/a1759954776170"
+      }
+    },
+    {
+      "id": "a1759992416920",
+      "datos": {
+        "docname": "a1759992416920",
+        "tipo": "ingreso",
+        "descripcion": "09-10-2025 Clases Jorge semana 67-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-09T06:46:57.645Z",
+        "fechaActualizacion": "2025-10-09T06:46:57.645Z",
+        "ruta": "Presupuesto/a1759992416920"
+      }
+    },
+    {
+      "id": "a1759992440793",
+      "datos": {
+        "docname": "a1759992440793",
+        "tipo": "ingreso",
+        "descripcion": "09-10-2025 Clases Javier semana 1-1",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-09T06:47:21.632Z",
+        "fechaActualizacion": "2025-10-09T06:47:21.632Z",
+        "ruta": "Presupuesto/a1759992440793"
+      }
+    },
+    {
+      "id": "a1760054759369",
+      "datos": {
+        "docname": "a1760054759369",
+        "tipo": "ingreso",
+        "descripcion": "10-10-2025 Clases Javier semana 1-2",
+        "valor": 10
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-10T00:06:00.140Z",
+        "fechaActualizacion": "2025-10-10T00:06:00.140Z",
+        "ruta": "Presupuesto/a1760054759369"
+      }
+    },
+    {
+      "id": "a1760126634542",
+      "datos": {
+        "docname": "a1760126634542",
+        "tipo": "ingreso",
+        "descripcion": "10-10-2025 Clases Jorge semana 67-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-10T20:03:55.809Z",
+        "fechaActualizacion": "2025-10-10T20:03:55.809Z",
+        "ruta": "Presupuesto/a1760126634542"
+      }
+    },
+    {
+      "id": "a1760286931783",
+      "datos": {
+        "docname": "a1760286931783",
+        "tipo": "ingreso",
+        "descripcion": "12-10-2025 Clases Javier semana 1-3",
+        "valor": 5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-12T16:35:32.598Z",
+        "fechaActualizacion": "2025-10-12T16:35:32.598Z",
+        "ruta": "Presupuesto/a1760286931783"
+      }
+    },
+    {
+      "id": "a1760719034659",
+      "datos": {
+        "docname": "a1760719034659",
+        "tipo": "ingreso",
+        "descripcion": "17-10-2025 Clases Luis Marcos semana 87",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-17T16:37:15.446Z",
+        "fechaActualizacion": "2025-10-17T16:37:15.446Z",
+        "ruta": "Presupuesto/a1760719034659"
+      }
+    },
+    {
+      "id": "a1760733517503",
+      "datos": {
+        "docname": "a1760733517503",
+        "tipo": "ingreso",
+        "descripcion": "17-10-2025 Clases Jorge semana 68-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-17T20:38:38.226Z",
+        "fechaActualizacion": "2025-10-17T20:38:38.226Z",
+        "ruta": "Presupuesto/a1760733517503"
+      }
+    },
+    {
+      "id": "a1761037950971",
+      "datos": {
+        "docname": "a1761037950971",
+        "tipo": "ingreso",
+        "descripcion": "21-10-2025 Clases Jorge semana 68-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-21T09:12:31.789Z",
+        "fechaActualizacion": "2025-10-21T09:12:31.789Z",
+        "ruta": "Presupuesto/a1761037950971"
+      }
+    },
+    {
+      "id": "a1761334531099",
+      "datos": {
+        "docname": "a1761334531099",
+        "tipo": "ingreso",
+        "descripcion": "24-10-2025 Clases Jorge semana 69-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-24T19:35:31.166Z",
+        "fechaActualizacion": "2025-10-24T19:35:31.166Z",
+        "ruta": "Presupuesto/a1761334531099"
+      }
+    },
+    {
+      "id": "a1761385854740",
+      "datos": {
+        "docname": "a1761385854740",
+        "tipo": "ingreso",
+        "descripcion": "25-10-2025 Clases Luis Marcos semana 88",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-25T09:50:55.263Z",
+        "fechaActualizacion": "2025-10-25T09:50:55.263Z",
+        "ruta": "Presupuesto/a1761385854740"
+      }
+    },
+    {
+      "id": "a1761902336351",
+      "datos": {
+        "docname": "a1761902336351",
+        "tipo": "ingreso",
+        "descripcion": "27-10-2025 Clases Jorge semana 70-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-31T09:18:57.272Z",
+        "fechaActualizacion": "2025-10-31T09:18:57.272Z",
+        "ruta": "Presupuesto/a1761902336351"
+      }
+    },
+    {
+      "id": "a1761902358422",
+      "datos": {
+        "docname": "a1761902358422",
+        "tipo": "ingreso",
+        "descripcion": "31-10-2025 Clases Luis Marcos semana 89",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-10-31T09:19:19.313Z",
+        "fechaActualizacion": "2025-10-31T09:19:19.313Z",
+        "ruta": "Presupuesto/a1761902358422"
+      }
+    },
+    {
+      "id": "a1761991182772",
+      "datos": {
+        "docname": "a1761991182772",
+        "tipo": "ingreso",
+        "descripcion": "01-11-2025 Clases Jorge semana 70-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-01T09:59:44.605Z",
+        "fechaActualizacion": "2025-11-01T09:59:44.605Z",
+        "ruta": "Presupuesto/a1761991182772"
+      }
+    },
+    {
+      "id": "a1762200249841",
+      "datos": {
+        "docname": "a1762200249841",
+        "tipo": "ingreso",
+        "descripcion": "03-11-2025 Clases Jorge semana 71-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-03T20:04:11.408Z",
+        "fechaActualizacion": "2025-11-03T20:04:11.408Z",
+        "ruta": "Presupuesto/a1762200249841"
+      }
+    },
+    {
+      "id": "a1762527326835",
+      "datos": {
+        "docname": "a1762527326835",
+        "tipo": "ingreso",
+        "descripcion": "07-11-2025 Clases Luis Marcos semana 90",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-07T14:55:28.430Z",
+        "fechaActualizacion": "2025-11-07T14:55:28.430Z",
+        "ruta": "Presupuesto/a1762527326835"
+      }
+    },
+    {
+      "id": "a1762787812150",
+      "datos": {
+        "docname": "a1762787812150",
+        "tipo": "ingreso",
+        "descripcion": "07-11-2025 Clases Jorge semana 71-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-10T15:16:52.381Z",
+        "fechaActualizacion": "2025-11-10T15:16:52.381Z",
+        "ruta": "Presupuesto/a1762787812150"
+      }
+    },
+    {
+      "id": "a1763035200932",
+      "datos": {
+        "docname": "a1763035200932",
+        "tipo": "ingreso",
+        "descripcion": "10-11-2025 Clases Jorge semana 72-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-13T12:00:01.173Z",
+        "fechaActualizacion": "2025-11-13T12:00:01.173Z",
+        "ruta": "Presupuesto/a1763035200932"
+      }
+    },
+    {
+      "id": "a1763035216817",
+      "datos": {
+        "docname": "a1763035216817",
+        "tipo": "ingreso",
+        "descripcion": "13-11-2025 Clases Luis Marcos semana 91",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-13T12:00:17.053Z",
+        "fechaActualizacion": "2025-11-13T12:00:17.053Z",
+        "ruta": "Presupuesto/a1763035216817"
+      }
+    },
+    {
+      "id": "a1763713624443",
+      "datos": {
+        "docname": "a1763713624443",
+        "tipo": "ingreso",
+        "descripcion": "14-11-2025 Clases Jorge semana 72-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-21T08:27:06.144Z",
+        "fechaActualizacion": "2025-11-21T08:27:06.144Z",
+        "ruta": "Presupuesto/a1763713624443"
+      }
+    },
+    {
+      "id": "a1763713641624",
+      "datos": {
+        "docname": "a1763713641624",
+        "tipo": "ingreso",
+        "descripcion": "18-11-2025 Clases Jorge semana 73-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-21T08:27:23.307Z",
+        "fechaActualizacion": "2025-11-21T08:27:23.307Z",
+        "ruta": "Presupuesto/a1763713641624"
+      }
+    },
+    {
+      "id": "a1763713663420",
+      "datos": {
+        "docname": "a1763713663420",
+        "tipo": "ingreso",
+        "descripcion": "21-11-2025 Clases Luis Marcos semana 92",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-21T08:27:45.116Z",
+        "fechaActualizacion": "2025-11-21T08:27:45.116Z",
+        "ruta": "Presupuesto/a1763713663420"
+      }
+    },
+    {
+      "id": "a1763798524871",
+      "datos": {
+        "docname": "a1763798524871",
+        "tipo": "ingreso",
+        "descripcion": "22-11-2025 Clases Jorge semana 73-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-22T08:02:04.531Z",
+        "fechaActualizacion": "2025-11-22T08:02:04.531Z",
+        "ruta": "Presupuesto/a1763798524871"
+      }
+    },
+    {
+      "id": "a1764069431189",
+      "datos": {
+        "docname": "a1764069431189",
+        "tipo": "ingreso",
+        "descripcion": "24-11-2025 Clases Jorge semana 74-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-25T11:17:11.161Z",
+        "fechaActualizacion": "2025-11-25T11:17:11.161Z",
+        "ruta": "Presupuesto/a1764069431189"
+      }
+    },
+    {
+      "id": "a1764318975966",
+      "datos": {
+        "docname": "a1764318975966",
+        "tipo": "ingreso",
+        "descripcion": "28-11-2025 Clases Luis Marcos semana 93",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-11-28T08:36:17.045Z",
+        "fechaActualizacion": "2025-11-28T08:36:17.045Z",
+        "ruta": "Presupuesto/a1764318975966"
+      }
+    },
+    {
+      "id": "a1764616157048",
+      "datos": {
+        "docname": "a1764616157048",
+        "tipo": "ingreso",
+        "descripcion": "28-11-2025 Clases Jorge semana 74-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-01T19:09:17.319Z",
+        "fechaActualizacion": "2025-12-01T19:09:17.319Z",
+        "ruta": "Presupuesto/a1764616157048"
+      }
+    },
+    {
+      "id": "a1764616185877",
+      "datos": {
+        "docname": "a1764616185877",
+        "tipo": "ingreso",
+        "descripcion": "01-12-2025 Clases Luis Marcos semana 94",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-01T19:09:46.149Z",
+        "fechaActualizacion": "2025-12-01T19:09:46.149Z",
+        "ruta": "Presupuesto/a1764616185877"
+      }
+    },
+    {
+      "id": "a1764622140247",
+      "datos": {
+        "docname": "a1764622140247",
+        "tipo": "ingreso",
+        "descripcion": "01-12-2025 Clases Jorge semana 75-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-01T20:49:00.526Z",
+        "fechaActualizacion": "2025-12-01T20:49:00.526Z",
+        "ruta": "Presupuesto/a1764622140247"
+      }
+    },
+    {
+      "id": "a1764622174277",
+      "datos": {
+        "docname": "a1764622174277",
+        "tipo": "egreso",
+        "descripcion": "01/12/2025 retiro ",
+        "valor": 500
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-01T20:49:34.521Z",
+        "fechaActualizacion": "2025-12-01T20:49:34.521Z",
+        "ruta": "Presupuesto/a1764622174277"
+      }
+    },
+    {
+      "id": "a1764622197444",
+      "datos": {
+        "docname": "a1764622197444",
+        "tipo": "egreso",
+        "descripcion": "correccion primo",
+        "valor": 25
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-01T20:49:57.753Z",
+        "fechaActualizacion": "2025-12-01T20:49:57.753Z",
+        "ruta": "Presupuesto/a1764622197444"
+      }
+    },
+    {
+      "id": "a1765024177683",
+      "datos": {
+        "docname": "a1765024177683",
+        "tipo": "ingreso",
+        "descripcion": "05-12-2025 Clases Jorge semana 75-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-06T12:29:39.198Z",
+        "fechaActualizacion": "2025-12-06T12:29:39.198Z",
+        "ruta": "Presupuesto/a1765024177683"
+      }
+    },
+    {
+      "id": "a1765527903838",
+      "datos": {
+        "docname": "a1765527903838",
+        "tipo": "ingreso",
+        "descripcion": "08-12-2025 Clases Jorge semana 76-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-12T08:25:04.465Z",
+        "fechaActualizacion": "2025-12-12T08:25:04.465Z",
+        "ruta": "Presupuesto/a1765527903838"
+      }
+    },
+    {
+      "id": "a1765527946209",
+      "datos": {
+        "docname": "a1765527946209",
+        "tipo": "ingreso",
+        "descripcion": "11-12-2025 Clases Luis Marcos semana 95",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-12T08:25:46.799Z",
+        "fechaActualizacion": "2025-12-12T08:25:46.799Z",
+        "ruta": "Presupuesto/a1765527946209"
+      }
+    },
+    {
+      "id": "a1765621409590",
+      "datos": {
+        "docname": "a1765621409590",
+        "tipo": "ingreso",
+        "descripcion": "12-12-2025 Clases Jorge semana 76-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-13T10:23:30.026Z",
+        "fechaActualizacion": "2025-12-13T10:23:30.026Z",
+        "ruta": "Presupuesto/a1765621409590"
+      }
+    },
+    {
+      "id": "a1765960192991",
+      "datos": {
+        "docname": "a1765960192991",
+        "tipo": "ingreso",
+        "descripcion": "16-12-2025 Clases Jorge semana 77-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-17T08:29:53.840Z",
+        "fechaActualizacion": "2025-12-17T08:29:53.840Z",
+        "ruta": "Presupuesto/a1765960192991"
+      }
+    },
+    {
+      "id": "a1766000202678",
+      "datos": {
+        "docname": "a1766000202678",
+        "tipo": "ingreso",
+        "descripcion": "17-12-2025 Clases Luis Marcos semana 96",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-17T19:36:43.698Z",
+        "fechaActualizacion": "2025-12-17T19:36:43.698Z",
+        "ruta": "Presupuesto/a1766000202678"
+      }
+    },
+    {
+      "id": "a1766180221477",
+      "datos": {
+        "docname": "a1766180221477",
+        "tipo": "ingreso",
+        "descripcion": "19-12-2025 Clases Jorge semana 77-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-19T21:37:02.358Z",
+        "fechaActualizacion": "2025-12-19T21:37:02.358Z",
+        "ruta": "Presupuesto/a1766180221477"
+      }
+    },
+    {
+      "id": "a1766744302419",
+      "datos": {
+        "docname": "a1766744302419",
+        "tipo": "ingreso",
+        "descripcion": "22-12-2025 Clases Jorge semana 78-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-26T10:18:23.004Z",
+        "fechaActualizacion": "2025-12-26T10:18:23.004Z",
+        "ruta": "Presupuesto/a1766744302419"
+      }
+    },
+    {
+      "id": "a1766744320731",
+      "datos": {
+        "docname": "a1766744320731",
+        "tipo": "ingreso",
+        "descripcion": "25-12-2025 Clases Jorge semana 78-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-26T10:18:41.096Z",
+        "fechaActualizacion": "2025-12-26T10:18:41.096Z",
+        "ruta": "Presupuesto/a1766744320731"
+      }
+    },
+    {
+      "id": "a1766744343246",
+      "datos": {
+        "docname": "a1766744343246",
+        "tipo": "ingreso",
+        "descripcion": "26-12-2025 Clases Luis Marcos semana 97",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-26T10:19:03.595Z",
+        "fechaActualizacion": "2025-12-26T10:19:03.595Z",
+        "ruta": "Presupuesto/a1766744343246"
+      }
+    },
+    {
+      "id": "a1766744467418",
+      "datos": {
+        "docname": "a1766744467418",
+        "tipo": "ingreso",
+        "descripcion": "22-12-2025 Youtube Adsense noviembre diciembre",
+        "valor": 104.39
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-26T10:21:07.774Z",
+        "fechaActualizacion": "2025-12-26T10:21:07.774Z",
+        "ruta": "Presupuesto/a1766744467418"
+      }
+    },
+    {
+      "id": "a1767094822245",
+      "datos": {
+        "docname": "a1767094822245",
+        "tipo": "ingreso",
+        "descripcion": "26-12-2025 Clases Jorge semana 78-3",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-30T11:40:22.782Z",
+        "fechaActualizacion": "2025-12-30T11:40:22.782Z",
+        "ruta": "Presupuesto/a1767094822245"
+      }
+    },
+    {
+      "id": "a1767094855497",
+      "datos": {
+        "docname": "a1767094855497",
+        "tipo": "ingreso",
+        "descripcion": "29-12-2025 Clases Jorge semana 79-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-30T11:40:56.025Z",
+        "fechaActualizacion": "2025-12-30T11:40:56.025Z",
+        "ruta": "Presupuesto/a1767094855497"
+      }
+    },
+    {
+      "id": "a1767096958826",
+      "datos": {
+        "docname": "a1767096958826",
+        "tipo": "ingreso",
+        "descripcion": "29-12-2025 Clases Jorge semana 79-1-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2025-12-30T12:15:59.351Z",
+        "fechaActualizacion": "2025-12-30T12:15:59.351Z",
+        "ruta": "Presupuesto/a1767096958826"
+      }
+    },
+    {
+      "id": "a1767433330500",
+      "datos": {
+        "docname": "a1767433330500",
+        "tipo": "ingreso",
+        "descripcion": "02-01-2026 Clases Jorge semana 80-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-03T09:42:11.285Z",
+        "fechaActualizacion": "2026-01-03T09:42:11.285Z",
+        "ruta": "Presupuesto/a1767433330500"
+      }
+    },
+    {
+      "id": "a1767433362610",
+      "datos": {
+        "docname": "a1767433362610",
+        "tipo": "ingreso",
+        "descripcion": "02-01-2026 Clases Luis Marcos semana 98",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-03T09:42:43.386Z",
+        "fechaActualizacion": "2026-01-03T09:42:43.386Z",
+        "ruta": "Presupuesto/a1767433362610"
+      }
+    },
+    {
+      "id": "a1767722421448",
+      "datos": {
+        "docname": "a1767722421448",
+        "tipo": "ingreso",
+        "descripcion": "05-01-2026 Clases Jorge semana 80-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-06T18:00:22.830Z",
+        "fechaActualizacion": "2026-01-06T18:00:22.830Z",
+        "ruta": "Presupuesto/a1767722421448"
+      }
+    },
+    {
+      "id": "a1768049824729",
+      "datos": {
+        "docname": "a1768049824729",
+        "tipo": "ingreso",
+        "descripcion": "10-01-2026 Clases Jorge semana 80-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-10T12:57:05.270Z",
+        "fechaActualizacion": "2026-01-10T12:57:05.270Z",
+        "ruta": "Presupuesto/a1768049824729"
+      }
+    },
+    {
+      "id": "a1768303212814",
+      "datos": {
+        "docname": "a1768303212814",
+        "tipo": "ingreso",
+        "descripcion": "12-01-2026 Clases Luis Marcos semana 99",
+        "valor": 15
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-13T11:20:13.495Z",
+        "fechaActualizacion": "2026-01-13T11:20:13.495Z",
+        "ruta": "Presupuesto/a1768303212814"
+      }
+    },
+    {
+      "id": "a1768576108679",
+      "datos": {
+        "docname": "a1768576108679",
+        "tipo": "ingreso",
+        "descripcion": "16-01-2026 Clases Luis Marcos semana 100",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-16T15:08:29.691Z",
+        "fechaActualizacion": "2026-01-16T15:08:29.691Z",
+        "ruta": "Presupuesto/a1768576108679"
+      }
+    },
+    {
+      "id": "a1768644448218",
+      "datos": {
+        "docname": "a1768644448218",
+        "tipo": "ingreso",
+        "descripcion": "17-01-2026 Clases Jorge semana 81-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-17T10:07:28.915Z",
+        "fechaActualizacion": "2026-01-17T10:07:28.915Z",
+        "ruta": "Presupuesto/a1768644448218"
+      }
+    },
+    {
+      "id": "a1768906860947",
+      "datos": {
+        "docname": "a1768906860947",
+        "tipo": "ingreso",
+        "descripcion": "19-01-2026 Clases Jorge semana 82-1",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-20T11:01:00.347Z",
+        "fechaActualizacion": "2026-01-20T11:01:00.347Z",
+        "ruta": "Presupuesto/a1768906860947"
+      }
+    },
+    {
+      "id": "a1769187806306",
+      "datos": {
+        "docname": "a1769187806306",
+        "tipo": "ingreso",
+        "descripcion": "23-01-2026 Clases Jorge semana 82-2",
+        "valor": 12.5
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-23T17:03:26.261Z",
+        "fechaActualizacion": "2026-01-23T17:03:26.261Z",
+        "ruta": "Presupuesto/a1769187806306"
+      }
+    },
+    {
+      "id": "a1769195579726",
+      "datos": {
+        "docname": "a1769195579726",
+        "tipo": "ingreso",
+        "descripcion": "23-01-2026 Clases Luis Marcos semana 101",
+        "valor": 30
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-23T19:12:59.688Z",
+        "fechaActualizacion": "2026-01-23T19:12:59.688Z",
+        "ruta": "Presupuesto/a1769195579726"
+      }
+    },
+    {
+      "id": "a1769195599983",
+      "datos": {
+        "docname": "a1769195599983",
+        "tipo": "ingreso",
+        "descripcion": "23-01-2026 Clases Luis Marcos semana 102",
+        "valor": 40
+      },
+      "metadata": {
+        "fechaCreacion": "2026-01-23T19:13:19.919Z",
+        "fechaActualizacion": "2026-01-23T19:13:19.919Z",
+        "ruta": "Presupuesto/a1769195599983"
+      }
+    }
+  ]
+}
