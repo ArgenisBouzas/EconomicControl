@@ -9,6 +9,7 @@ export default function Navbar() {
   const navItems = [
     { name: "🏠 Inicio", path: "/" },
     { name: "🧾 Facturas", path: "/facturas" },
+    { name: "🧾 Registros", path: "/facturas/todos" },
     { name: "👥 Alumnos", path: "/alumnos" },
     { name: "📊 Reportes", path: "/reportes" },
     { name: "⚙️ Configuración", path: "/configuracion" },

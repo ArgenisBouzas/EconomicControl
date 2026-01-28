@@ -78,76 +78,79 @@ export default function FacturasClient({
   };
 
   // Manejar envío del formulario
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+// En la función handleSubmit dentro de FacturasClient.tsx
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  if (!validateForm()) {
+    return;
+  }
+  
+  setIsSubmitting(true);
+  
+  try {
+    const response = await fetch('/api/registros', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        ...formData,
+        valor: Number(formData.valor),
+        // fecha_creacion y fecha_actualizacion ahora las maneja el backend
+        metadata: {},
+        ruta: null
+      }),
+    });
     
-    if (!validateForm()) {
-      return;
+    const data = await response.json();
+    
+    if (!response.ok) {
+      throw new Error(data.error || 'Error al crear el registro');
     }
     
-    setIsSubmitting(true);
+    // El nuevo registro ya viene con alumno_nombre desde la API
+    const newRegistro: RegistroPresupuestoConAlumno = data;
     
-    try {
-      const response = await fetch('/api/registros', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          ...formData,
-          valor: Number(formData.valor),
-          fecha_creacion: new Date().toISOString(),
-          fecha_actualizacion: new Date().toISOString(),
-          metadata: {},
-          ruta: null
-        }),
-      });
-      
-      if (!response.ok) {
-        throw new Error('Error al crear el registro');
-      }
-      
-      const newRegistro = await response.json();
-      
-      // Actualizar el estado local con el nuevo registro
-      const updatedRegistros = [newRegistro, ...registros];
-      setRegistros(updatedRegistros);
-      
-      // Recalcular estadísticas
-      const totalIngresos = updatedRegistros
-        .filter(r => r.tipo === 'ingreso')
-        .reduce((sum, r) => sum + r.valor, 0);
-      
-      const totalEgresos = updatedRegistros
-        .filter(r => r.tipo === 'egreso')
-        .reduce((sum, r) => sum + r.valor, 0);
-      
-      setStats({
-        totalIngresos,
-        totalEgresos,
-        balanceTotal: totalIngresos - totalEgresos,
-        totalRegistros: updatedRegistros.length
-      });
-      
-      // Limpiar formulario
-      setFormData({
-        usuario_id: 1,
-        alumno_id: '',
-        descripcion: '',
-        tipo: 'ingreso',
-        valor: '',
-        docname: '',
-      });
-      
-      alert('Registro creado exitosamente');
-      
-    } catch (error) {
-      console.error('Error:', error);
-      alert('Error al crear el registro');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    // Actualizar el estado local con el nuevo registro
+    const updatedRegistros = [newRegistro, ...registros];
+    setRegistros(updatedRegistros);
+    
+    // Recalcular estadísticas
+    const totalIngresos = updatedRegistros
+      .filter(r => r.tipo === 'ingreso')
+      .reduce((sum, r) => sum + r.valor, 0);
+    
+    const totalEgresos = updatedRegistros
+      .filter(r => r.tipo === 'egreso')
+      .reduce((sum, r) => sum + r.valor, 0);
+    
+    setStats({
+      totalIngresos,
+      totalEgresos,
+      balanceTotal: totalIngresos - totalEgresos,
+      totalRegistros: updatedRegistros.length
+    });
+    
+    // Limpiar formulario
+    setFormData({
+      usuario_id: 1,
+      alumno_id: '',
+      descripcion: '',
+      tipo: 'ingreso',
+      valor: '',
+      docname: '',
+    });
+    
+    alert('Registro creado exitosamente');
+    
+  } catch (error) {
+    console.error('Error:', error);
+    alert(error instanceof Error ? error.message : 'Error al crear el registro');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <div className="max-w-7xl mx-auto p-6">

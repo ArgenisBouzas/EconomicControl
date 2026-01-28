@@ -1,4 +1,4 @@
-// app/page.tsx - VERSIÓN ACTUALIZADA CON 5 GRÁFICAS
+// app/page.tsx - VERSIÓN MODIFICADA CON EGRESOS POR ALUMNO
 import { fetchAlumnos, fetchRegistrosConNombre } from "./lib/data";
 import { RegistroPresupuesto } from "./lib/definitions";
 import GraficaIngresos from "./components/GraficaIngresos";
@@ -148,6 +148,122 @@ export default async function Home() {
     };
   };
 
+  // Función NUEVA: calcular egresos por alumno
+  const calcularEgresosPorAlumno = () => {
+    const egresosPorAlumno: Record<string, number> = {};
+
+    registrosPresupuesto.forEach(registro => {
+      if (registro.tipo === 'egreso' && registro.alumno_nombre) {
+        const nombreAlumno = registro.alumno_nombre;
+        
+        if (!egresosPorAlumno[nombreAlumno]) {
+          egresosPorAlumno[nombreAlumno] = 0;
+        }
+        
+        egresosPorAlumno[nombreAlumno] += Number(registro.valor);
+      }
+    });
+
+    // Convertir a array de objetos y ordenar por egresos (mayor a menor)
+    return Object.entries(egresosPorAlumno)
+      .map(([alumno, egresos]) => ({
+        alumno,
+        egresos
+      }))
+      .sort((a, b) => b.egresos - a.egresos);
+  };
+
+  // Función NUEVA: calcular ingresos y egresos por alumno (datos combinados)
+  const calcularIngresosYEgresosPorAlumno = () => {
+    const datosPorAlumno: Record<string, { ingresos: number, egresos: number }> = {};
+
+    registrosPresupuesto.forEach(registro => {
+      if (registro.alumno_nombre) {
+        const nombreAlumno = registro.alumno_nombre;
+        
+        if (!datosPorAlumno[nombreAlumno]) {
+          datosPorAlumno[nombreAlumno] = { ingresos: 0, egresos: 0 };
+        }
+        
+        if (registro.tipo === 'ingreso') {
+          datosPorAlumno[nombreAlumno].ingresos += Number(registro.valor);
+        } else if (registro.tipo === 'egreso') {
+          datosPorAlumno[nombreAlumno].egresos += Number(registro.valor);
+        }
+      }
+    });
+
+    // Convertir a array de objetos y agregar balance
+    return Object.entries(datosPorAlumno)
+      .map(([alumno, datos]) => ({
+        alumno,
+        ingresos: datos.ingresos,
+        egresos: datos.egresos,
+        balance: datos.ingresos - datos.egresos
+      }))
+      .sort((a, b) => b.ingresos - a.ingresos); // Ordenar por ingresos (mayor a menor)
+  };
+
+  // Función NUEVA: calcular egresos por mes y alumno (ÚLTIMOS 12 MESES)
+  const calcularEgresosPorMesYAlumno = () => {
+    const ahora = new Date();
+    const ultimos12Meses: string[] = [];
+    
+    // Obtener nombres de los últimos 12 meses
+    for (let i = 11; i >= 0; i--) {
+      const fecha = new Date();
+      fecha.setMonth(ahora.getMonth() - i);
+      const mes = fecha.toLocaleString('es-ES', { month: 'short' });
+      const año = fecha.getFullYear();
+      ultimos12Meses.push(`${mes} ${año}`);
+    }
+
+    // Crear estructura para almacenar datos
+    const datosPorMesYAlumno: Record<string, Record<string, number>> = {};
+    
+    // Inicializar estructura para todos los meses
+    ultimos12Meses.forEach(mes => {
+      datosPorMesYAlumno[mes] = {};
+    });
+
+    // Filtrar solo egresos
+    const egresos = registrosPresupuesto.filter(r => r.tipo === 'egreso');
+    
+    // Agrupar por mes y alumno
+    egresos.forEach(registro => {
+      const fecha = new Date(registro.fecha_creacion);
+      const mes = fecha.toLocaleString('es-ES', { month: 'short' });
+      const año = fecha.getFullYear();
+      const mesKey = `${mes} ${año}`;
+      const alumno = registro.alumno_nombre || 'Sin asignar';
+      
+      // Solo procesar si está en los últimos 12 meses
+      if (ultimos12Meses.includes(mesKey)) {
+        if (!datosPorMesYAlumno[mesKey][alumno]) {
+          datosPorMesYAlumno[mesKey][alumno] = 0;
+        }
+        datosPorMesYAlumno[mesKey][alumno] += Number(registro.valor);
+      }
+    });
+
+    // Obtener todos los alumnos únicos que tienen egresos
+    const alumnosUnicos = new Set<string>();
+    Object.values(datosPorMesYAlumno).forEach(mesData => {
+      Object.keys(mesData).forEach(alumno => {
+        alumnosUnicos.add(alumno);
+      });
+    });
+
+    const alumnosArray = Array.from(alumnosUnicos);
+
+    // Formatear datos para la gráfica
+    return {
+      meses: ultimos12Meses,
+      alumnos: alumnosArray,
+      datos: datosPorMesYAlumno
+    };
+  };
+
   // Calcular todas las métricas DESPUÉS de tener registrosPresupuesto
   const totalIngresos = registrosPresupuesto
     .filter(r => r.tipo === 'ingreso')
@@ -269,11 +385,13 @@ export default async function Home() {
       }
     });
 
-    // Convertir a array de objetos
-    return Object.entries(ingresosPorAlumno).map(([alumno, ingresos]) => ({
-      alumno,
-      ingresos
-    }));
+    // Convertir a array de objetos y ordenar por ingresos (mayor a menor)
+    return Object.entries(ingresosPorAlumno)
+      .map(([alumno, ingresos]) => ({
+        alumno,
+        ingresos
+      }))
+      .sort((a, b) => b.ingresos - a.ingresos);
   };
 
   // Calcular todos los datos
@@ -282,6 +400,9 @@ export default async function Home() {
   const datosPorAlumno = calcularIngresosPorAlumno();
   const datosPorMesYAlumno = calcularIngresosPorMesYAlumno(); // Últimos 12 meses
   const datosPorMesYAlumnoCompleto = calcularIngresosPorMesYAlumnoCompleto(); // Histórico completo
+  const datosEgresosPorAlumno = calcularEgresosPorAlumno(); // NUEVO: Egresos por alumno
+  const datosCombinadosPorAlumno = calcularIngresosYEgresosPorAlumno(); // NUEVO: Ingresos y egresos combinados
+  const datosEgresosPorMesYAlumno = calcularEgresosPorMesYAlumno(); // NUEVO: Egresos por mes y alumno
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 md:p-8">
@@ -546,73 +667,32 @@ export default async function Home() {
         />
       </section>
 
-      {/* QUINTA GRÁFICA: Ingresos por mes y alumno (Histórico completo) */}
-      {/* <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 hover:shadow-2xl transition-shadow duration-300">
+      {/* QUINTA GRÁFICA: Egresos por alumno (NUEVA) */}
+      <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 hover:shadow-2xl transition-shadow duration-300">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-gray-800">
-            📊 Histórico Completo por Mes y Alumno
+            💸 Egresos por Alumno
           </h2>
-          <span className="bg-amber-100 text-amber-800 text-sm font-semibold px-3 py-1 rounded-full">
-            Vista Histórica Completa
+          <span className="bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full">
+            Gastos por Estudiante
           </span>
         </div>
         
         <div className="mb-4 text-sm text-gray-600">
-          <p>Mostrando TODOS los ingresos históricos desglosados por alumno para cada mes desde el inicio.</p>
-          <p>Total meses: {datosPorMesYAlumnoCompleto.meses.length} | Total alumnos: {datosPorMesYAlumnoCompleto.alumnos.length}</p>
-          <p className="text-xs mt-2 text-gray-500">
-            * Los meses se ordenan cronológicamente desde el primer registro
-          </p>
+          <p>Mostrando egresos totales por cada alumno. Total de alumnos con egresos: {datosEgresosPorAlumno.length}</p>
         </div>
         
-        <GraficaMesAlumno 
-          meses={datosPorMesYAlumnoCompleto.meses}
-          alumnos={datosPorMesYAlumnoCompleto.alumnos}
-          datos={datosPorMesYAlumnoCompleto.datos}
-          titulo=""
-        />
-        
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-amber-50 p-4 rounded-lg">
-            <h3 className="font-semibold text-amber-800 mb-2">Periodo Histórico</h3>
-            <p className="text-lg font-bold text-amber-900">
-              {datosPorMesYAlumnoCompleto.meses.length} meses
-            </p>
-            <p className="text-sm text-amber-700">
-              Desde {datosPorMesYAlumnoCompleto.meses[0] || 'N/A'}
-            </p>
-          </div>
-          
-          <div className="bg-amber-50 p-4 rounded-lg">
-            <h3 className="font-semibold text-amber-800 mb-2">Alumnos Totales Históricos</h3>
-            <p className="text-2xl font-bold text-amber-600">
-              {datosPorMesYAlumnoCompleto.alumnos.length}
-            </p>
-          </div>
-          
-          <div className="bg-amber-50 p-4 rounded-lg">
-            <h3 className="font-semibold text-amber-800 mb-2">Total Histórico</h3>
-            <p className="text-2xl font-bold text-green-600">
-              ${Object.values(datosPorMesYAlumnoCompleto.datos).reduce((sum, mesData) => {
-                return sum + Object.values(mesData).reduce((mesSum, valor) => mesSum + valor, 0);
-              }, 0).toLocaleString('es-ES')}
+        {/* Usamos el mismo componente GraficaAlumnos pero con datos de egresos */}
+        <div className="bg-red-50 p-4 rounded-lg mb-6">
+          <div className="text-center">
+            <h3 className="text-lg font-semibold text-red-800 mb-2">Total de Egresos por Alumnos</h3>
+            <p className="text-2xl font-bold text-red-600">
+              ${datosEgresosPorAlumno.reduce((sum, a) => sum + a.egresos, 0).toLocaleString('es-ES')}
             </p>
           </div>
         </div>
-      </section> */}
-
-      {/* Tabla detallada de alumnos */}
-      {datosPorAlumno.length > 0 && (
-        <section className="bg-white rounded-2xl shadow-xl p-6 mb-8">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-gray-800">
-              📋 Resumen Detallado por Alumno
-            </h2>
-            <span className="bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
-              Datos Consolidados
-            </span>
-          </div>
-          
+        
+        {datosEgresosPorAlumno.length > 0 ? (
           <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
@@ -621,7 +701,7 @@ export default async function Home() {
                     Alumno
                   </th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Total Ingresos
+                    Total Egresos
                   </th>
                   <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Porcentaje
@@ -632,25 +712,29 @@ export default async function Home() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {datosPorAlumno.map((alumno, index) => {
-                  const porcentaje = (alumno.ingresos / datosPorAlumno.reduce((sum, a) => sum + a.ingresos, 0)) * 100;
+                {datosEgresosPorAlumno.map((alumno, index) => {
+                  const totalEgresosAlumnos = datosEgresosPorAlumno.reduce((sum, a) => sum + a.egresos, 0);
+                  const porcentaje = totalEgresosAlumnos > 0 
+                    ? (alumno.egresos / totalEgresosAlumnos) * 100 
+                    : 0;
+                  
                   return (
                     <tr key={index} className="hover:bg-gray-50">
                       <td className="px-4 py-3 text-sm font-medium text-gray-900">
                         {alumno.alumno}
                       </td>
-                      <td className="px-4 py-3 text-sm text-green-600 font-medium">
-                        ${alumno.ingresos.toLocaleString('es-ES')}
+                      <td className="px-4 py-3 text-sm text-red-600 font-medium">
+                        ${alumno.egresos.toLocaleString('es-ES')}
                       </td>
                       <td className="px-4 py-3 text-sm text-gray-600 font-medium">
                         {porcentaje.toFixed(1)}%
                       </td>
                       <td className="px-4 py-3 text-sm font-medium">
                         <span className={`px-2 py-1 rounded-full text-xs ${
-                          index === 0 ? 'bg-yellow-100 text-yellow-800' :
-                          index === 1 ? 'bg-gray-100 text-gray-800' :
-                          index === 2 ? 'bg-orange-100 text-orange-800' :
-                          'bg-blue-100 text-blue-800'
+                          index === 0 ? 'bg-red-100 text-red-800' :
+                          index === 1 ? 'bg-orange-100 text-orange-800' :
+                          index === 2 ? 'bg-yellow-100 text-yellow-800' :
+                          'bg-gray-100 text-gray-800'
                         }`}>
                           #{index + 1}
                         </span>
@@ -661,12 +745,271 @@ export default async function Home() {
               </tbody>
             </table>
           </div>
-        </section>
-      )}
+        ) : (
+          <div className="text-center py-8 text-gray-500">
+            No hay datos de egresos por alumno disponibles
+          </div>
+        )}
+        
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Alumno con Mayor Egreso</h3>
+            {datosEgresosPorAlumno.length > 0 ? (
+              <>
+                <p className="text-lg font-bold text-gray-900">
+                  {datosEgresosPorAlumno[0].alumno}
+                </p>
+                <p className="text-xl font-bold text-red-600">
+                  ${datosEgresosPorAlumno[0].egresos.toLocaleString('es-ES')}
+                </p>
+              </>
+            ) : (
+              <p className="text-gray-500">No hay datos</p>
+            )}
+          </div>
+          
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Promedio de Egresos</h3>
+            <p className="text-2xl font-bold text-red-600">
+              ${datosEgresosPorAlumno.length > 0 
+                ? (datosEgresosPorAlumno.reduce((sum, a) => sum + a.egresos, 0) / datosEgresosPorAlumno.length).toLocaleString('es-ES', {maximumFractionDigits: 0})
+                : '0'}
+            </p>
+          </div>
+          
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Alumnos con Egresos</h3>
+            <p className="text-2xl font-bold text-red-600">
+              {datosEgresosPorAlumno.length}
+            </p>
+            <p className="text-sm text-gray-600">
+              de {alumnos.length} alumnos totales
+            </p>
+          </div>
+        </div>
+      </section>
 
-      {/* Grid de dos columnas original */}
+      {/* SEXTA GRÁFICA: Balance por alumno (Ingresos vs Egresos) */}
+      <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 hover:shadow-2xl transition-shadow duration-300">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-gray-800">
+            ⚖️ Balance por Alumno (Ingresos vs Egresos)
+          </h2>
+          <span className="bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full">
+            Análisis Completo
+          </span>
+        </div>
+        
+        <div className="mb-4 text-sm text-gray-600">
+          <p>Comparación de ingresos y egresos por cada alumno. Total de alumnos con registros: {datosCombinadosPorAlumno.length}</p>
+        </div>
+        
+        {datosCombinadosPorAlumno.length > 0 ? (
+          <div className="overflow-x-auto">
+            <table className="min-w-full divide-y divide-gray-200">
+              <thead className="bg-gray-50">
+                <tr>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Alumno
+                  </th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-green-500 uppercase tracking-wider">
+                    Ingresos
+                  </th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-red-500 uppercase tracking-wider">
+                    Egresos
+                  </th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-blue-500 uppercase tracking-wider">
+                    Balance
+                  </th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    Estado
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                {datosCombinadosPorAlumno.map((alumno, index) => (
+                  <tr key={index} className="hover:bg-gray-50">
+                    <td className="px-4 py-3 text-sm font-medium text-gray-900">
+                      {alumno.alumno}
+                    </td>
+                    <td className="px-4 py-3 text-sm text-green-600 font-medium">
+                      ${alumno.ingresos.toLocaleString('es-ES')}
+                    </td>
+                    <td className="px-4 py-3 text-sm text-red-600 font-medium">
+                      ${alumno.egresos.toLocaleString('es-ES')}
+                    </td>
+                    <td className={`px-4 py-3 text-sm font-bold ${
+                      alumno.balance >= 0 ? 'text-blue-600' : 'text-orange-600'
+                    }`}>
+                      ${alumno.balance.toLocaleString('es-ES')}
+                    </td>
+                    <td className="px-4 py-3 text-sm font-medium">
+                      <span className={`px-2 py-1 rounded-full text-xs ${
+                        alumno.balance > 0 
+                          ? 'bg-green-100 text-green-800' 
+                          : alumno.balance < 0 
+                            ? 'bg-red-100 text-red-800' 
+                            : 'bg-gray-100 text-gray-800'
+                      }`}>
+                        {alumno.balance > 0 ? 'Positivo' : alumno.balance < 0 ? 'Negativo' : 'Neutral'}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <div className="text-center py-8 text-gray-500">
+            No hay datos combinados por alumno disponibles
+          </div>
+        )}
+        
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-green-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-green-800 mb-2">Alumno con Mejor Balance</h3>
+            {datosCombinadosPorAlumno.length > 0 ? (
+              (() => {
+                const alumnoMejorBalance = [...datosCombinadosPorAlumno]
+                  .filter(a => a.balance > 0)
+                  .sort((a, b) => b.balance - a.balance)[0];
+                
+                return alumnoMejorBalance ? (
+                  <>
+                    <p className="text-lg font-bold text-gray-900">
+                      {alumnoMejorBalance.alumno}
+                    </p>
+                    <p className="text-xl font-bold text-green-600">
+                      +${alumnoMejorBalance.balance.toLocaleString('es-ES')}
+                    </p>
+                  </>
+                ) : (
+                  <p className="text-gray-500">No hay balances positivos</p>
+                );
+              })()
+            ) : (
+              <p className="text-gray-500">No hay datos</p>
+            )}
+          </div>
+          
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Alumno con Peor Balance</h3>
+            {datosCombinadosPorAlumno.length > 0 ? (
+              (() => {
+                const alumnoPeorBalance = [...datosCombinadosPorAlumno]
+                  .filter(a => a.balance < 0)
+                  .sort((a, b) => a.balance - b.balance)[0];
+                
+                return alumnoPeorBalance ? (
+                  <>
+                    <p className="text-lg font-bold text-gray-900">
+                      {alumnoPeorBalance.alumno}
+                    </p>
+                    <p className="text-xl font-bold text-red-600">
+                      -${Math.abs(alumnoPeorBalance.balance).toLocaleString('es-ES')}
+                    </p>
+                  </>
+                ) : (
+                  <p className="text-gray-500">No hay balances negativos</p>
+                );
+              })()
+            ) : (
+              <p className="text-gray-500">No hay datos</p>
+            )}
+          </div>
+          
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-blue-800 mb-2">Balance General</h3>
+            <p className={`text-2xl font-bold ${
+              datosCombinadosPorAlumno.reduce((sum, a) => sum + a.balance, 0) >= 0 
+                ? 'text-blue-600' 
+                : 'text-orange-600'
+            }`}>
+              ${datosCombinadosPorAlumno.reduce((sum, a) => sum + a.balance, 0).toLocaleString('es-ES')}
+            </p>
+            <p className="text-sm text-gray-600">
+              {datosCombinadosPorAlumno.filter(a => a.balance >= 0).length} alumnos positivos
+            </p>
+          </div>
+        </div>
+      </section>
 
-     
+      {/* SÉPTIMA GRÁFICA: Egresos por mes y alumno (Últimos 12 meses) */}
+      <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 hover:shadow-2xl transition-shadow duration-300">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-gray-800">
+            📉 Egresos por Mes y Alumno (Últimos 12 meses)
+          </h2>
+          <span className="bg-red-100 text-red-800 text-sm font-semibold px-3 py-1 rounded-full">
+            Gastos Detallados
+          </span>
+        </div>
+        
+        <div className="mb-4 text-sm text-gray-600">
+          <p>Mostrando egresos desglosados por alumno para cada mes. Período: Últimos 12 meses</p>
+          <p>Total meses: {datosEgresosPorMesYAlumno.meses.length} | Total alumnos: {datosEgresosPorMesYAlumno.alumnos.length}</p>
+        </div>
+        
+        <GraficaMesAlumno 
+          meses={datosEgresosPorMesYAlumno.meses}
+          alumnos={datosEgresosPorMesYAlumno.alumnos}
+          datos={datosEgresosPorMesYAlumno.datos}
+          titulo="Egresos por Mes y Alumno"
+          color="red"
+        />
+        
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Egresos Totales (12 meses)</h3>
+            <p className="text-2xl font-bold text-red-600">
+              ${Object.values(datosEgresosPorMesYAlumno.datos).reduce((sum, mesData) => {
+                return sum + Object.values(mesData).reduce((mesSum, valor) => mesSum + valor, 0);
+              }, 0).toLocaleString('es-ES')}
+            </p>
+          </div>
+          
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Mes con Mayor Egreso</h3>
+            {datosEgresosPorMesYAlumno.meses.length > 0 ? (
+              (() => {
+                let mesMayorEgreso = '';
+                let maxEgreso = 0;
+                
+                Object.entries(datosEgresosPorMesYAlumno.datos).forEach(([mes, datosMes]) => {
+                  const totalMes = Object.values(datosMes).reduce((sum, valor) => sum + valor, 0);
+                  if (totalMes > maxEgreso) {
+                    maxEgreso = totalMes;
+                    mesMayorEgreso = mes;
+                  }
+                });
+                
+                return (
+                  <>
+                    <p className="text-lg font-bold text-gray-900">
+                      {mesMayorEgreso}
+                    </p>
+                    <p className="text-xl font-bold text-red-600">
+                      ${maxEgreso.toLocaleString('es-ES')}
+                    </p>
+                  </>
+                );
+              })()
+            ) : (
+              <p className="text-gray-500">No hay datos</p>
+            )}
+          </div>
+          
+          <div className="bg-red-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-red-800 mb-2">Alumnos con Egresos</h3>
+            <p className="text-2xl font-bold text-red-600">
+              {datosEgresosPorMesYAlumno.alumnos.length}
+            </p>
+            <p className="text-sm text-gray-600">
+              en los últimos 12 meses
+            </p>
+          </div>
+        </div>
+      </section>
       
     </main>
   );
