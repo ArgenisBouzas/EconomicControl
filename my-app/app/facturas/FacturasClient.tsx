@@ -4,6 +4,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Alumno, RegistroPresupuestoConAlumno } from '@/app/lib/definitions';
+import VerTodoButton from '../components/VerTodoButton';
 
 interface FacturasClientProps {
   initialAlumnos: Alumno[];
@@ -336,6 +337,9 @@ export default function FacturasClient({
             <div className="p-6 border-b bg-gray-50">
               <h2 className="text-xl font-semibold text-gray-800">Registros Recientes</h2>
               <p className="text-sm text-gray-500 mt-1">Últimos 5 registros</p>
+              <div className="text-center mt-4">
+                  <VerTodoButton></VerTodoButton>
+                </div>
             </div>
             
             <div className="p-4 max-h-[500px] overflow-y-auto">

@@ -1,9 +1,10 @@
-// app/page.tsx - VERSIÓN CORREGIDA
+// app/page.tsx - VERSIÓN ACTUALIZADA CON 5 GRÁFICAS
 import { fetchAlumnos, fetchRegistrosConNombre } from "./lib/data";
 import { RegistroPresupuesto } from "./lib/definitions";
 import GraficaIngresos from "./components/GraficaIngresos";
 import GraficaAlumnos from "./components/GraficaAlumnos";
 import GraficaMesAlumno from "./components/GraficaMesAlumno";
+import VerTodoButton from "./components/VerTodoButton";
 
 export default async function Home() {
   // Primero cargar los datos asíncronos
@@ -12,7 +13,7 @@ export default async function Home() {
   
   const registrosPresupuesto = registrosConNombre;
   
-  // Función para calcular ingresos por mes y alumno (AHORA SÍ PUEDE ACCEDER A registrosPresupuesto)
+  // Función para calcular ingresos por mes y alumno (ÚLTIMOS 12 MESES)
   const calcularIngresosPorMesYAlumno = () => {
     const ahora = new Date();
     const ultimos12Meses: string[] = [];
@@ -67,6 +68,81 @@ export default async function Home() {
     // Formatear datos para la gráfica
     return {
       meses: ultimos12Meses,
+      alumnos: alumnosArray,
+      datos: datosPorMesYAlumno
+    };
+  };
+
+  // Función NUEVA: calcular ingresos por mes y alumno (HISTÓRICO COMPLETO)
+  const calcularIngresosPorMesYAlumnoCompleto = () => {
+    // Crear estructura para almacenar datos
+    const datosPorMesYAlumno: Record<string, Record<string, number>> = {};
+
+    // Filtrar solo ingresos
+    const ingresos = registrosPresupuesto.filter(r => r.tipo === 'ingreso');
+    
+    // Primero, obtener todos los meses únicos
+    const mesesUnicos = new Set<string>();
+    
+    ingresos.forEach(registro => {
+      const fecha = new Date(registro.fecha_creacion);
+      const mes = fecha.toLocaleString('es-ES', { month: 'short' });
+      const año = fecha.getFullYear();
+      const mesKey = `${mes} ${año}`;
+      mesesUnicos.add(mesKey);
+    });
+
+    // Convertir a array y ordenar cronológicamente
+    const mesesArray = Array.from(mesesUnicos).sort((a, b) => {
+      const [mesA, añoA] = a.split(' ');
+      const [mesB, añoB] = b.split(' ');
+      
+      const meses = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
+      const mesIndexA = meses.indexOf(mesA.toLowerCase());
+      const mesIndexB = meses.indexOf(mesB.toLowerCase());
+      
+      const fechaA = new Date(Number(añoA), mesIndexA);
+      const fechaB = new Date(Number(añoB), mesIndexB);
+      
+      return fechaA.getTime() - fechaB.getTime();
+    });
+
+    // Inicializar estructura para todos los meses
+    mesesArray.forEach(mes => {
+      datosPorMesYAlumno[mes] = {};
+    });
+
+    // Agrupar por mes y alumno
+    ingresos.forEach(registro => {
+      const fecha = new Date(registro.fecha_creacion);
+      const mes = fecha.toLocaleString('es-ES', { month: 'short' });
+      const año = fecha.getFullYear();
+      const mesKey = `${mes} ${año}`;
+      const alumno = registro.alumno_nombre || 'Sin asignar';
+      
+      if (!datosPorMesYAlumno[mesKey]) {
+        datosPorMesYAlumno[mesKey] = {};
+      }
+      
+      if (!datosPorMesYAlumno[mesKey][alumno]) {
+        datosPorMesYAlumno[mesKey][alumno] = 0;
+      }
+      datosPorMesYAlumno[mesKey][alumno] += Number(registro.valor);
+    });
+
+    // Obtener todos los alumnos únicos que tienen ingresos
+    const alumnosUnicos = new Set<string>();
+    Object.values(datosPorMesYAlumno).forEach(mesData => {
+      Object.keys(mesData).forEach(alumno => {
+        alumnosUnicos.add(alumno);
+      });
+    });
+
+    const alumnosArray = Array.from(alumnosUnicos);
+
+    // Formatear datos para la gráfica
+    return {
+      meses: mesesArray,
       alumnos: alumnosArray,
       datos: datosPorMesYAlumno
     };
@@ -204,7 +280,8 @@ export default async function Home() {
   const datosGrafica = calcularIngresosPorMes();
   const datosHistoricoCompleto = calcularHistoricoCompleto();
   const datosPorAlumno = calcularIngresosPorAlumno();
-  const datosPorMesYAlumno = calcularIngresosPorMesYAlumno(); // Ahora se puede calcular
+  const datosPorMesYAlumno = calcularIngresosPorMesYAlumno(); // Últimos 12 meses
+  const datosPorMesYAlumnoCompleto = calcularIngresosPorMesYAlumnoCompleto(); // Histórico completo
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-4 md:p-8">
@@ -245,6 +322,67 @@ export default async function Home() {
             <p className="text-gray-600">Balance Total</p>
           </div>
         </div>
+      </div>
+
+       <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div className="p-6 border-b bg-gray-50">
+              <h2 className="text-xl font-semibold text-gray-800">Registros Recientes</h2>
+              <p className="text-sm text-gray-500 mt-1">Últimos 5 registros</p>
+            </div>
+            {/* listado de facturas recientes */}
+            <div className="p-4 max-h-[500px] overflow-y-auto">
+              <div className="text-center mt-4">
+                  <VerTodoButton></VerTodoButton>
+                </div>
+              {registrosPresupuesto.slice(0, 10).map((registro) => (
+                
+                <div 
+                  key={registro.id} 
+                  className="mb-4 p-4 border rounded-lg hover:bg-gray-50 transition duration-200"
+                >
+                  
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="font-medium text-gray-800 truncate">
+                      {registro.alumno_nombre || 'Alumno no encontrado'}
+                    </h3>
+                    <span className={`px-2 py-1 rounded text-xs font-medium ${
+                      registro.tipo === 'ingreso' 
+                        ? 'bg-green-100 text-green-800' 
+                        : 'bg-red-100 text-red-800'
+                    }`}>
+                      {registro.tipo === 'ingreso' ? 'INGRESO' : 'EGRESO'}
+                    </span>
+                  </div>
+                  
+                  <p className="text-sm text-gray-600 mb-2 truncate">
+                    {registro.descripcion}
+                  </p>
+                  
+                  <div className="flex justify-between items-center">
+                    <span className={`text-lg font-bold ${
+                      registro.tipo === 'ingreso' ? 'text-green-600' : 'text-red-600'
+                    }`}>
+                      ${registro.valor.toLocaleString()}
+                    </span>
+                    <span className="text-xs text-gray-500">
+                      {new Date(registro.fecha_creacion).toLocaleDateString()}
+                    </span>
+                  </div>
+                </div>
+              ))}
+              
+              {registrosPresupuesto.length === 0 && (
+                <div className="text-center py-8 text-gray-500">
+                  No hay registros disponibles
+                </div>
+              )}
+              
+              {registrosPresupuesto.length > 0 && (
+                <div className="text-center mt-4">
+                  <VerTodoButton></VerTodoButton>
+                </div>
+              )}
+            </div>
       </div>
 
       {/* PRIMERA GRÁFICA: Últimos 12 meses */}
@@ -382,21 +520,22 @@ export default async function Home() {
             </p>
           </div>
         </div>
+      </section>
 
- {/* CUARTA GRÁFICA: Ingresos por mes y alumno */}
+      {/* CUARTA GRÁFICA: Ingresos por mes y alumno (Últimos 12 meses) */}
       <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 hover:shadow-2xl transition-shadow duration-300">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-gray-800">
             📅 Ingresos por Mes y Alumno (Últimos 12 meses)
           </h2>
           <span className="bg-indigo-100 text-indigo-800 text-sm font-semibold px-3 py-1 rounded-full">
-            Vista Detallada
+            Vista Detallada - Corto Plazo
           </span>
         </div>
         
         <div className="mb-4 text-sm text-gray-600">
-          <p>Mostrando ingresos desglosados por alumno para cada mes.</p>
-          <p>Los colores representan el porcentaje de participación de cada alumno en el total del mes.</p>
+          <p>Mostrando ingresos desglosados por alumno para cada mes. Período: Últimos 12 meses</p>
+          <p>Total meses: {datosPorMesYAlumno.meses.length} | Total alumnos: {datosPorMesYAlumno.alumnos.length}</p>
         </div>
         
         <GraficaMesAlumno 
@@ -406,11 +545,75 @@ export default async function Home() {
           titulo=""
         />
       </section>
+
+      {/* QUINTA GRÁFICA: Ingresos por mes y alumno (Histórico completo) */}
+      {/* <section className="bg-white rounded-2xl shadow-xl p-6 mb-8 hover:shadow-2xl transition-shadow duration-300">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-2xl font-bold text-gray-800">
+            📊 Histórico Completo por Mes y Alumno
+          </h2>
+          <span className="bg-amber-100 text-amber-800 text-sm font-semibold px-3 py-1 rounded-full">
+            Vista Histórica Completa
+          </span>
+        </div>
         
-        {/* Tabla detallada de alumnos */}
-        {datosPorAlumno.length > 0 && (
-          <div className="mt-6 overflow-x-auto">
-            <h3 className="font-semibold text-gray-700 mb-3">Detalle por Alumno</h3>
+        <div className="mb-4 text-sm text-gray-600">
+          <p>Mostrando TODOS los ingresos históricos desglosados por alumno para cada mes desde el inicio.</p>
+          <p>Total meses: {datosPorMesYAlumnoCompleto.meses.length} | Total alumnos: {datosPorMesYAlumnoCompleto.alumnos.length}</p>
+          <p className="text-xs mt-2 text-gray-500">
+            * Los meses se ordenan cronológicamente desde el primer registro
+          </p>
+        </div>
+        
+        <GraficaMesAlumno 
+          meses={datosPorMesYAlumnoCompleto.meses}
+          alumnos={datosPorMesYAlumnoCompleto.alumnos}
+          datos={datosPorMesYAlumnoCompleto.datos}
+          titulo=""
+        />
+        
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-amber-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-amber-800 mb-2">Periodo Histórico</h3>
+            <p className="text-lg font-bold text-amber-900">
+              {datosPorMesYAlumnoCompleto.meses.length} meses
+            </p>
+            <p className="text-sm text-amber-700">
+              Desde {datosPorMesYAlumnoCompleto.meses[0] || 'N/A'}
+            </p>
+          </div>
+          
+          <div className="bg-amber-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-amber-800 mb-2">Alumnos Totales Históricos</h3>
+            <p className="text-2xl font-bold text-amber-600">
+              {datosPorMesYAlumnoCompleto.alumnos.length}
+            </p>
+          </div>
+          
+          <div className="bg-amber-50 p-4 rounded-lg">
+            <h3 className="font-semibold text-amber-800 mb-2">Total Histórico</h3>
+            <p className="text-2xl font-bold text-green-600">
+              ${Object.values(datosPorMesYAlumnoCompleto.datos).reduce((sum, mesData) => {
+                return sum + Object.values(mesData).reduce((mesSum, valor) => mesSum + valor, 0);
+              }, 0).toLocaleString('es-ES')}
+            </p>
+          </div>
+        </div>
+      </section> */}
+
+      {/* Tabla detallada de alumnos */}
+      {datosPorAlumno.length > 0 && (
+        <section className="bg-white rounded-2xl shadow-xl p-6 mb-8">
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-gray-800">
+              📋 Resumen Detallado por Alumno
+            </h2>
+            <span className="bg-gray-100 text-gray-800 text-sm font-semibold px-3 py-1 rounded-full">
+              Datos Consolidados
+            </span>
+          </div>
+          
+          <div className="overflow-x-auto">
             <table className="min-w-full divide-y divide-gray-200">
               <thead className="bg-gray-50">
                 <tr>
@@ -458,22 +661,13 @@ export default async function Home() {
               </tbody>
             </table>
           </div>
-        )}
-      </section>
+        </section>
+      )}
 
       {/* Grid de dos columnas original */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
-        
-        {/* Sección de Alumnos */}
-        <section className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
-          {/* ... tu código existente de alumnos ... */}
-        </section>
 
-        {/* Sección de Registros Presupuestarios */}
-        <section className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
-          {/* ... tu código existente de registros ... */}
-        </section>
-      </div>
+     
+      
     </main>
   );
 }
