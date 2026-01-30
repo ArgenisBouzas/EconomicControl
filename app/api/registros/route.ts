@@ -39,8 +39,8 @@ export async function GET(request: NextRequest) {
     `;
     
     // Aplicar filtros si existen
-    const whereConditions = [];
-    const queryParams = [];
+    const whereConditions: string[] = [];
+    const queryParams: any[] = [];
     
     if (search) {
       whereConditions.push(`rp.descripcion ILIKE $${whereConditions.length + 1}`);
@@ -77,20 +77,27 @@ export async function GET(request: NextRequest) {
       queryParams.push(Number(maxValor));
     }
     
-    // Aplicar condiciones WHERE si existen
+    // Aplicar condiciones WHERE si existen - CORREGIDO
     if (whereConditions.length > 0) {
-      query = sql`${query} WHERE ${sql(whereConditions.join(' AND '))}${sql(queryParams)}`;
+      const whereClause = whereConditions.join(' AND ');
+      query = sql`${query} WHERE ${sql.unsafe(whereClause, ...queryParams)}`;
     }
     
-    // Contar total de registros (para paginación)
-    const countQuery = sql`SELECT COUNT(*) as total FROM registros_presupuesto rp ${
-      whereConditions.length > 0 
-        ? sql`WHERE ${sql(whereConditions.join(' AND '), ...queryParams)}`
-        : sql``
-    }`;
+    // Contar total de registros (para paginación) - CORREGIDO
+    let countQuery;
+    if (whereConditions.length > 0) {
+      const whereClause = whereConditions.join(' AND ');
+      countQuery = sql`SELECT COUNT(*) as total FROM registros_presupuesto rp WHERE ${sql.unsafe(whereClause, ...queryParams)}`;
+    } else {
+      countQuery = sql`SELECT COUNT(*) as total FROM registros_presupuesto rp`;
+    }
     
     // Aplicar ordenamiento y paginación a la consulta principal
-    query = sql`${query} ORDER BY rp.fecha_creacion DESC LIMIT ${limit} OFFSET ${offset}`;
+    if (whereConditions.length > 0) {
+      query = sql`${query} ORDER BY rp.fecha_creacion DESC LIMIT ${limit} OFFSET ${offset}`;
+    } else {
+      query = sql`${query} ORDER BY rp.fecha_creacion DESC LIMIT ${limit} OFFSET ${offset}`;
+    }
     
     const [registros, countResult] = await Promise.all([
       query,
@@ -124,8 +131,6 @@ export async function GET(request: NextRequest) {
   }
 }
 
-// POST - Crear nuevo registro de presupuesto
-// POST - Crear nuevo registro de presupuesto
 // POST - Crear nuevo registro de presupuesto
 export async function POST(request: NextRequest) {
   try {
@@ -185,7 +190,7 @@ export async function POST(request: NextRequest) {
     const fechaActual = new Date();
     
     // Insertar nuevo registro con ID generado
-    const registros = await sql<(any & { alumno_nombre: string })[]>`
+    const registros = await sql`
       INSERT INTO registros_presupuesto 
         (id, descripcion, valor, tipo, alumno_id, usuario_id, docname, fecha_creacion, fecha_actualizacion)
       VALUES 
@@ -207,12 +212,7 @@ export async function POST(request: NextRequest) {
         usuario_id,
         docname,
         fecha_creacion,
-        fecha_actualizacion,
-        (
-          SELECT nombre 
-          FROM alumnos 
-          WHERE id = ${Number(body.alumno_id)}
-        ) as alumno_nombre
+        fecha_actualizacion
     `;
     
     if (registros.length === 0) {
@@ -222,9 +222,19 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    console.log('Registro creado exitosamente:', registros[0]);
+    // Obtener el nombre del alumno
+    const [alumnoInfo] = await sql`
+      SELECT nombre FROM alumnos WHERE id = ${Number(body.alumno_id)}
+    `;
     
-    return NextResponse.json(registros[0], { status: 201 });
+    const registroConAlumno = {
+      ...registros[0],
+      alumno_nombre: alumnoInfo?.nombre || null
+    };
+    
+    console.log('Registro creado exitosamente:', registroConAlumno);
+    
+    return NextResponse.json(registroConAlumno, { status: 201 });
     
   } catch (error: any) {
     console.error('Error en POST /api/registros:', error);
