@@ -11,20 +11,6 @@ export async function GET(request: NextRequest) {
     const activo = searchParams.get('activo');
     
     // Construir la query dinámicamente
-    let conditions: string[] = [];
-    let params: any[] = [];
-    
-    if (search) {
-      conditions.push(`nombre ILIKE $${conditions.length + 1}`);
-      params.push(`%${search}%`);
-    }
-    
-    if (activo !== null) {
-      conditions.push(`activo = $${conditions.length + 1}`);
-      params.push(activo === 'true');
-    }
-    
-    // Construir la consulta SQL completa
     let query = `
       SELECT 
         id,
@@ -36,16 +22,36 @@ export async function GET(request: NextRequest) {
       FROM alumnos
     `;
     
+    const conditions: string[] = [];
+    const params: any[] = [];
+    let paramIndex = 1;
+    
+    if (search) {
+      conditions.push(`nombre ILIKE $${paramIndex}`);
+      params.push(`%${search}%`);
+      paramIndex++;
+    }
+    
+    if (activo !== null) {
+      conditions.push(`activo = $${paramIndex}`);
+      params.push(activo === 'true');
+      paramIndex++;
+    }
+    
     if (conditions.length > 0) {
       query += ` WHERE ${conditions.join(' AND ')}`;
     }
     
     query += ` ORDER BY activo DESC, nombre ASC`;
     
-    // Ejecutar la consulta
-    const alumnos = conditions.length > 0 
-      ? await sql(query, ...params)
-      : await sql(query);
+    // Ejecutar la consulta usando sql.query en lugar de sql()
+    let alumnos;
+    if (params.length > 0) {
+      // Usar sql.unsafe para evitar problemas de tipado (o sql.query si está disponible)
+      alumnos = await sql.unsafe(query, params);
+    } else {
+      alumnos = await sql.unsafe(query);
+    }
     
     return NextResponse.json(alumnos);
   } catch (error) {
