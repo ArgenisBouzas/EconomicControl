@@ -955,7 +955,7 @@ export default async function Home() {
           alumnos={datosEgresosPorMesYAlumno.alumnos}
           datos={datosEgresosPorMesYAlumno.datos}
           titulo="Egresos por Mes y Alumno"
-          color="red"
+          
         />
         
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
