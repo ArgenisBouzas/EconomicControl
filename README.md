@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EconomicControl
 
-## Getting Started
+🧮 **EconomicControl - Sistema de Gestión Financiera para Tutores y Educadores**
 
-First, run the development server:
+## 📋 Descripción General
+Aplicación web personal para administrar ingresos y egresos generados por actividad educativa con alumnos particulares. Sistema especializado en control financiero de clases, cursos y asesorías.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Propósito
+- Seguimiento preciso de pagos por alumno
+- Distinción clara entre ingresos (clases) y egresos (materiales)
+- Visualización inmediata de salud financiera educativa
+- Organización por periodos académicos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Características Principales
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 👥 Gestión por Alumno
+- Perfil financiero individual por estudiante
+- Historial completo de pagos
+- Control de mensualidades/clases sueltas
+- Seguimiento de deudas pendientes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 💰 Sistema de Transacciones
+- **Ingresos**: Clases, cursos, material vendido
+- **Egresos**: Material didáctico, suscripciones, transporte
+- Categorización personalizada
+- Comprobantes digitales
 
-## Learn More
+### 📊 Panel de Control
+- Gráficos por alumno y categoría
+- Comparativa ingresos vs egresos
+- Proyección de ingresos mensuales
+- Métricas para educadores
 
-To learn more about Next.js, take a look at the following resources:
+### 📅 Calendario Financiero
+- Recordatorios de pagos
+- Control por periodos académicos
+- Planificación de inversiones
+- Temporadas altas/bajas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🏗️ Tecnologías
+- **Frontend**: Next.js 14 + TypeScript + Tailwind CSS
+- **Backend**: Firebase (Firestore, Auth, Hosting)
+- **Gráficos**: Recharts
+- **Validación**: React Hook Form + Zod
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🚀 Roadmap
+### Fase 1 (MVP)
+- [ ] Autenticación y perfil
+- [ ] CRUD de alumnos
+- [ ] CRUD de transacciones
+- [ ] Dashboard básico
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Fase 2
+- [ ] Gráficos interactivos
+- [ ] Sistema de recordatorios
+- [ ] Exportación de datos
+- [ ] Categorías personalizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Fase 3
+- [ ] App móvil
+- [ ] Integración con calendario
+- [ ] Notificaciones push
+- [ ] Análisis predictivo
+
+## 💡 Beneficios
+- **Control total** de finanzas educativas
+- **Ahorro de tiempo** en administración
+- **Datos concretos** para tomar decisiones
+- **Automatización** de procesos repetitivos
+
+## 🔐 Seguridad
+- Datos encriptados en tránsito/reposo
+- Acceso únicamente personal
+- Copias de seguridad automáticas
+- Autenticación por email/contraseña
+
+## 📱 Disponibilidad
+- 🌐 Web responsive
+- 📲 Mobile-friendly
+- 💻 Desktop completo
+- 🔄 Funcionalidad offline básica
+
+---
+
+**✨ "Claridad financiera para enfocarse en lo que importa: enseñar."**
