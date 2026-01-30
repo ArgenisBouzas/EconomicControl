@@ -79,7 +79,7 @@ export async function GET(request: NextRequest) {
     
     // Aplicar condiciones WHERE si existen
     if (whereConditions.length > 0) {
-      query = sql`${query} WHERE ${sql(whereConditions.join(' AND '), ...queryParams)}`;
+      query = sql`${query} WHERE ${sql(whereConditions.join(' AND '))}${sql(queryParams)}`;
     }
     
     // Contar total de registros (para paginación)
