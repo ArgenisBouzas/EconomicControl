@@ -1,4 +1,3 @@
-// app/api/alumnos/route.ts - CORREGIDO COMPLETAMENTE
 import { NextRequest, NextResponse } from 'next/server';
 import postgres from 'postgres';
 
@@ -11,7 +10,22 @@ export async function GET(request: NextRequest) {
     const search = searchParams.get('search');
     const activo = searchParams.get('activo');
     
-    let query = sql`
+    // Construir la query dinámicamente
+    let conditions: string[] = [];
+    let params: any[] = [];
+    
+    if (search) {
+      conditions.push(`nombre ILIKE $${conditions.length + 1}`);
+      params.push(`%${search}%`);
+    }
+    
+    if (activo !== null) {
+      conditions.push(`activo = $${conditions.length + 1}`);
+      params.push(activo === 'true');
+    }
+    
+    // Construir la consulta SQL completa
+    let query = `
       SELECT 
         id,
         nombre,
@@ -22,27 +36,16 @@ export async function GET(request: NextRequest) {
       FROM alumnos
     `;
     
-    // Aplicar filtros si existen
-    const whereConditions = [];
-    const queryParams = [];
-    
-    if (search) {
-      whereConditions.push(`nombre ILIKE $1`);
-      queryParams.push(`%${search}%`);
+    if (conditions.length > 0) {
+      query += ` WHERE ${conditions.join(' AND ')}`;
     }
     
-    if (activo !== null) {
-      whereConditions.push(`activo = $${whereConditions.length + 1}`);
-      queryParams.push(activo === 'true');
-    }
+    query += ` ORDER BY activo DESC, nombre ASC`;
     
-    if (whereConditions.length > 0) {
-      query = sql`${query} WHERE ${sql(whereConditions.join(' AND '), ...queryParams)}`;
-    }
-    
-    query = sql`${query} ORDER BY activo DESC, nombre ASC`;
-    
-    const alumnos = await query;
+    // Ejecutar la consulta
+    const alumnos = conditions.length > 0 
+      ? await sql(query, ...params)
+      : await sql(query);
     
     return NextResponse.json(alumnos);
   } catch (error) {
@@ -54,7 +57,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
-// POST - Crear nuevo alumno - ¡CORREGIDO!
+// POST - Crear nuevo alumno
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
@@ -76,22 +79,22 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    // Insertar nuevo alumno - ¡COLUMNA CORRECTA: "activo", NO "activo_hoslean"!
+    // Insertar nuevo alumno
     const [alumno] = await sql`
       INSERT INTO alumnos 
-        (nombre, email, telefono, activo)  -- ← AQUÍ: "activo"
+        (nombre, email, telefono, activo)
       VALUES 
         (${body.nombre.trim()},
          ${body.email?.trim() || null},
          ${body.telefono?.trim() || null},
-         ${body.activo !== false})  -- ← AQUÍ: "activo"
+         ${body.activo !== false})
       RETURNING 
         id,
         nombre,
         email,
         telefono,
         fecha_registro,
-        activo  -- ← AQUÍ: "activo"
+        activo
     `;
     
     console.log('Alumno creado exitosamente:', alumno);
