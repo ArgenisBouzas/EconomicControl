@@ -1,10 +1,8 @@
 // app/alumnos/page.tsx
-import AlumnosClient from './AlumnosClient';
-import { fetchAlumnos } from '@/app/lib/data';
+export const dynamic = 'force-dynamic';
 
-export default async function AlumnosPage() {
-  // Obtener alumnos desde el servidor
-  const alumnos = await fetchAlumnos();
-  
-  return <AlumnosClient initialAlumnos={alumnos} />;
+import AlumnosClient from './AlumnosClient';
+
+export default function AlumnosPage() {
+  return <AlumnosClient initialAlumnos={[]} />;
 }

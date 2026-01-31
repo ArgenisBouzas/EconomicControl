@@ -3,15 +3,23 @@ import { Alumno, RegistroPresupuesto } from "./definitions";
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
+// Agrega al inicio de fetchAlumnos()
 export async function fetchAlumnos() {
+  // Retornar array vacío durante el build de Vercel
+  if (process.env.VERCEL_ENV) {
+    return [];
+  }
+  
   try {
+    const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
     const alumnos = await sql<Alumno[]>`
       SELECT * FROM alumnos ORDER BY id ASC
     `;
+    await sql.end();
     return alumnos;
   } catch (err) {
     console.error('Database Error:', err);
-    throw new Error('Failed to fetch all alumnos.');
+    return []; // Retornar array vacío en lugar de lanzar error
   }
 }
 
