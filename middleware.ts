@@ -1,14 +1,14 @@
 // middleware.ts
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
-
+///api/registros
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
   
   console.log('🛡️ Middleware ejecutándose para:', pathname)
   
   // Verificar si la ruta es /facturas, /alumnos o sus subrutas
-  if (pathname.startsWith('/facturas') || pathname.startsWith('/alumnos')) {
+  if (pathname.startsWith('/facturas') || pathname.startsWith('/alumnos')|| pathname.startsWith('/api/registros')) {
     console.log('🔒 Ruta protegida detectada:', pathname)
     
     // Obtener todas las cookies
@@ -36,5 +36,5 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/facturas/:path*', '/alumnos/:path*'],
+  matcher: ['/facturas/:path*', '/alumnos/:path*', '/api/registros/:path*'],
 }
