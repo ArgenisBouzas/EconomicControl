@@ -5,11 +5,17 @@ import GraficaIngresos from "./components/GraficaIngresos";
 import GraficaAlumnos from "./components/GraficaAlumnos";
 import GraficaMesAlumno from "./components/GraficaMesAlumno";
 import VerTodoButton from "./components/VerTodoButton";
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
+  console.log('🔄 Home page - Starting data fetch');
+  console.log('📊 POSTGRES_URL exists:', !!process.env.POSTGRES_URL);
+  console.log('🏗️ NODE_ENV:', process.env.NODE_ENV);
   // Primero cargar los datos asíncronos
   const alumnos = await fetchAlumnos();
   const registrosConNombre = await fetchRegistrosConNombre();
+    console.log('✅ Data fetched - alumnos:', alumnos.length);
+  console.log('✅ Data fetched - registros:', registrosConNombre.length);
   
   const registrosPresupuesto = registrosConNombre;
   
