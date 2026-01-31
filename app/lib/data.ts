@@ -79,18 +79,21 @@ export async function fetchRegistrosConNombre() {
   }
 }
 
-// Las demás funciones también necesitan ser modificadas...
-
-// IMPORTANTE: Aquí usamos el mismo `sql` que ya está definido arriba
-// lib/data.ts
-// lib/data.ts
 export async function fetchRegistroById(id: string) {
+  if (!canConnectToDB()) {
+    console.warn('Skipping DB connection during build - fetchRegistroById');
+    return null;
+  }
+  
   try {
     // Asegurarse de que id es una string no vacía
     if (!id || typeof id !== 'string') {
       console.error('Invalid ID provided:', id);
       return null;
     }
+    
+    // Crear conexión SQL
+    const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
     
     // Usar parámetro tipado explícitamente
     const registros = await sql<(RegistroPresupuesto & { alumno_nombre: string })[]>`
@@ -103,6 +106,7 @@ export async function fetchRegistroById(id: string) {
       LIMIT 1
     `;
     
+    await sql.end();
     return registros.length > 0 ? registros[0] : null;
   } catch (error) {
     console.error('Database Error in fetchRegistroById:', error);
@@ -126,7 +130,13 @@ export async function updateRegistro(id: string, data: {
   usuario_id: number;
   docname?: string;
 }) {
+  if (!canConnectToDB()) {
+    console.warn('Skipping DB connection during build - updateRegistro');
+    throw new Error('Cannot update registro during build');
+  }
+  
   try {
+    const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
     const [updated] = await sql<(RegistroPresupuesto & { alumno_nombre: string })[]>`
       UPDATE registros_presupuesto 
       SET 
@@ -141,6 +151,7 @@ export async function updateRegistro(id: string, data: {
       RETURNING *
     `;
     
+    await sql.end();
     return updated || null;
   } catch (error) {
     console.error('Error updating registro:', error);
@@ -149,8 +160,15 @@ export async function updateRegistro(id: string, data: {
 }
 
 export async function deleteRegistro(id: string) {
+  if (!canConnectToDB()) {
+    console.warn('Skipping DB connection during build - deleteRegistro');
+    throw new Error('Cannot delete registro during build');
+  }
+  
   try {
+    const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
     await sql`DELETE FROM registros_presupuesto WHERE id = ${id}`;
+    await sql.end();
     return true;
   } catch (error) {
     console.error('Error deleting registro:', error);
