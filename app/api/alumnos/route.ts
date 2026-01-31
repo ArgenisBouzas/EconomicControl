@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import postgres from 'postgres';
+export const dynamic = 'force-dynamic';
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
