@@ -4,32 +4,49 @@ import { Alumno, RegistroPresupuesto } from "./definitions";
 
 // Función helper para verificar si podemos conectar a DB
 const canConnectToDB = () => {
+  console.log('=== DB Connection Check ===');
+  console.log('NODE_ENV:', process.env.NODE_ENV);
+  console.log('VERCEL:', process.env.VERCEL ? 'YES' : 'NO');
+  console.log('POSTGRES_URL exists:', !!process.env.POSTGRES_URL);
+  
+  // Si no hay POSTGRES_URL en ningún entorno, no podemos conectar
+  if (!process.env.POSTGRES_URL) {
+    console.log('❌ No POSTGRES_URL found');
+    return false;
+  }
+  
   // Durante el build de Vercel, no hay DB disponible
-  if (process.env.NODE_ENV === 'production' && !process.env.POSTGRES_URL) {
-    return false;
-  }
-  // También verificar si estamos en proceso de build
   if (process.env.NEXT_PHASE === 'phase-production-build') {
+    console.log('⚠️ Build phase detected, skipping DB');
     return false;
   }
+  
+  console.log('✅ Can connect to DB');
   return true;
 };
 
 export async function fetchAlumnos() {
+  console.log('🔄 fetchAlumnos called');
+  
   if (!canConnectToDB()) {
-    console.warn('Skipping DB connection during build');
+    console.warn('⚠️ Cannot connect to DB, returning empty array');
     return [];
   }
   
   try {
+    console.log('🔗 Creating SQL connection...');
     const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+    
+    console.log('📊 Executing query...');
     const alumnos = await sql<Alumno[]>`
       SELECT * FROM alumnos ORDER BY id ASC
     `;
+    
+    console.log(`✅ Retrieved ${alumnos.length} alumnos`);
     await sql.end();
     return alumnos;
   } catch (err) {
-    console.error('Database Error:', err);
+    console.error('❌ Database Error:', err);
     return [];
   }
 }
