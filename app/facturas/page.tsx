@@ -1,6 +1,7 @@
 // app/facturas/page.tsx - COMPONENTE SERVIDOR
 import FacturasClient from './FacturasClient';
 import { fetchAlumnos, fetchRegistrosConNombre } from '@/app/lib/data';
+export const dynamic = 'force-dynamic';
 
 export default async function FacturasPage() {
   // Fetch data on the server

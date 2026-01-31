@@ -1,12 +1,23 @@
+// app/lib/data.ts
 import postgres from 'postgres';
 import { Alumno, RegistroPresupuesto } from "./definitions";
 
-const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
+// Función helper para verificar si podemos conectar a DB
+const canConnectToDB = () => {
+  // Durante el build de Vercel, no hay DB disponible
+  if (process.env.NODE_ENV === 'production' && !process.env.POSTGRES_URL) {
+    return false;
+  }
+  // También verificar si estamos en proceso de build
+  if (process.env.NEXT_PHASE === 'phase-production-build') {
+    return false;
+  }
+  return true;
+};
 
-// Agrega al inicio de fetchAlumnos()
 export async function fetchAlumnos() {
-  // Retornar array vacío durante el build de Vercel
-  if (process.env.VERCEL_ENV) {
+  if (!canConnectToDB()) {
+    console.warn('Skipping DB connection during build');
     return [];
   }
   
@@ -19,26 +30,39 @@ export async function fetchAlumnos() {
     return alumnos;
   } catch (err) {
     console.error('Database Error:', err);
-    return []; // Retornar array vacío en lugar de lanzar error
+    return [];
   }
 }
 
 export async function fetchRegistros() {
+  if (!canConnectToDB()) {
+    console.warn('Skipping DB connection during build - fetchRegistros');
+    return [];
+  }
+  
   try {
+    const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
     const registros = await sql<RegistroPresupuesto[]>`
       SELECT *
       FROM registros_presupuesto
       ORDER BY fecha_creacion DESC
     `;
+    await sql.end();
     return registros;
   } catch (err) {
     console.error('Database Error:', err);
-    throw new Error('Failed to fetch all registros.');
+    return [];
   }
 }
 
 export async function fetchRegistrosConNombre() {
+  if (!canConnectToDB()) {
+    console.warn('Skipping DB connection during build - fetchRegistrosConNombre');
+    return [];
+  }
+  
   try {
+    const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
     const registros = await sql<(RegistroPresupuesto & { alumno_nombre: string })[]>`
       SELECT
         rp.*,
@@ -47,12 +71,15 @@ export async function fetchRegistrosConNombre() {
       LEFT JOIN alumnos a ON rp.alumno_id = a.id
       ORDER BY rp.fecha_creacion DESC
     `;
+    await sql.end();
     return registros;
   } catch (err) {
     console.error('Database Error:', err);
-    throw new Error('Failed to fetch all registros with student names.');
+    return [];
   }
 }
+
+// Las demás funciones también necesitan ser modificadas...
 
 // IMPORTANTE: Aquí usamos el mismo `sql` que ya está definido arriba
 // lib/data.ts
