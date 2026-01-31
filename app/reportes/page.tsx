@@ -3,6 +3,7 @@ import { RegistroPresupuesto } from "../lib/definitions";
 import GraficaIngresos from "../components/GraficaIngresos";
 import GraficaAlumnos from "../components/GraficaAlumnos";
 import GraficaMesAlumno from "../components/GraficaMesAlumno";
+export const dynamic = 'force-dynamic'
 
 export default async function ReportesPage() {
 

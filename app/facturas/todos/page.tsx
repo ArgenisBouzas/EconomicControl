@@ -2,6 +2,7 @@
 import { fetchRegistrosConNombre } from "@/app/lib/data";
 import Link from "next/link";
 import { DeleteButton } from "@/app/components/DeleteButton";
+export const dynamic = 'force-dynamic'
 
 export default async function Home() {
   const registrosConNombre = await fetchRegistrosConNombre();
